@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/vitorpy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://vitorpy.com
+  * I am vitorpy (https://keybase.io/vitorpy) on keybase.
+  * I have a public key with fingerprint 7D2D AEE5 04D0 5CF1 A2F9  1297 6010 486A 5D30 4819
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01015325ce9bc4bd0fb4869b300f2e24ded9ff3bd87745ccfcb2139d0eb907660bca0a",
+      "fingerprint": "7d2daee504d05cf1a2f912976010486a5d304819",
+      "host": "keybase.io",
+      "key_id": "6010486a5d304819",
+      "kid": "01015325ce9bc4bd0fb4869b300f2e24ded9ff3bd87745ccfcb2139d0eb907660bca0a",
+      "uid": "e691ca1491360b6d18adad55793ffa19",
+      "username": "vitorpy"
+    },
+    "service": {
+      "hostname": "vitorpy.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1504882624,
+  "expire_in": 157680000,
+  "prev": "d449ca0ff8cb72b5f10283426ee9b574340f3562d76d2103a56fcadcdd498cd2",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMIkAnicrVJbSFRRFJ1JLVKkIrKgorwgNTjafT9GEemF9ZGa2kPK4d5zztWLeu80
+c8cHpoYkgc8QTOvH0tRMTNL6SsXUj2RG8S+CrDT9MPywqKSnnSv1EfTZ+dmcvdda
+e+3NnogMsYXbPzXa9S0zNqc98LTZbzs/0D9aRigGLCVcZUQ+Wg+oACKf6c7XIOEi
+SIqkOIbmAJIUwCqQVBVW5CWFIUmVRjQLEZRUlVGgKAgsB4AKFJpiJEgiRSIFnicV
+IJMy4SRUTc9FXo9X000sK0AayghxJAtJDqiUTKsSRUsCj/thfZmDDI6UhIl5hs9i
+YHOK7EPxmoFz+ONet/cP/H/27V+XQ7xEAZliJYrBJR5SogxlyHGCxKiqvN7X70Ne
+XS5EGF2kmYbXU0qUOwmcLNIAsvZqDfI3IB4YhZjp8RqmAYwCXMgzTY/PZRHNUo+F
+LEaK+7eGW9F0iLeIGUXI69MMnXBRGAlMzRKl8DJFkeZp1kmgEo/mRW7NQnACL5L4
+WX1QEZaELCvh4VRVBIpAK5xKkbTIsDSP8K44gWVYUmU4noYCD2mKZGSOV4EMAYSs
+JAJIE9ZUl3SDcDHYppyLJX1ari6bfi8iysdGL4Ta7OG2jWEbrOuyhW/e+ufmytlN
+P2MOZRFDd4KvLsbPgGNLw2nTzPzz2bCvgzErySVx0TlD7VNRsdpy7OBirSP0RUsN
+t62153X3dDcaPZ4N+/xm9uFg9UJbemqCFKy90lna9nH7w897lsJm6+cSeo9WV+5C
+b5vmKqj6OjPibL3Qn7X6/mqmff5DRcjdnh/ataToxy9tB+bMxAmxtWXZkbnQnF7z
+pD0/+cTJI033xydPryR17bz9paqjLmftwVDluf3XQxMLOqPCvmWEjo/siwpUxbsC
+jTcGih2NaZO3dvTZyLiakYjqM6fGqt99T+ldXXsU7hCfNWfUNjgW9wZ2X+4qfBOZ
+eI+f0oPdB28GO1IaplMDw/W/ALyqQv8=
+=eazu
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vitorpy
+
+==================================================================
+
