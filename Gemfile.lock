@@ -31,8 +31,6 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
-    minima (2.1.1)
-      jekyll (~> 3.3)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -55,7 +53,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-swiss
   json
-  minima (~> 2.0)
 
 RUBY VERSION
    ruby 2.4.2p198
