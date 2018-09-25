@@ -10,4 +10,4 @@ Minimal description here.
 
 You can reach me at vitor@vitorpy.com
 
-Built with [minima](https://github.com/jekyll/minima) and [jekyll](https://github.com/jekyll/jekyll).
+Built with [swiss](https://github.com/broccolini/swiss) and [jekyll](https://github.com/jekyll/jekyll).
