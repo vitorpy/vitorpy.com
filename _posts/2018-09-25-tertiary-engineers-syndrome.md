@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Teriary Engineer's Syndrome"
+title:  "Tertiary Engineer's Syndrome"
 date:   Tue Sep 25 20:16:42 DST 2018
 ---
 
