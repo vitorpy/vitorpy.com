@@ -1,8 +1,8 @@
 # Site settings
-name: Vitor Py
+name: "Vitor Py"
 description: "Software engineer"
 url: "https://vitorpy.com/"
-
+title: "Vitor Py"
 
 # Delete the lines you don't need
 # about 5 elements are recomended
