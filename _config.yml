@@ -21,8 +21,8 @@ avatar: yes
 avatar_img_path: "https://avatars1.githubusercontent.com/u/12871"
 
 
-front_img: yes
-front_img_path: "imgs/background.jpg"
+#front_img: yes
+#front_img_path: "imgs/background.jpg"
 #front_img_path: "https://external.url/image.jpg"
 
 
@@ -34,3 +34,12 @@ favicon_img_path: "/favicon.ico"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []

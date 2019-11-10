@@ -16,3 +16,4 @@ It's licensed under Creative-Commons.
 
 This theme makes use of the amazing <a href="http://fontawesome.io/">Font Awesome</a> icons.
 
+compress.html taken from https://github.com/penibelst/jekyll-compress-html
