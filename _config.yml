@@ -1,6 +1,6 @@
 # Site settings
 name: "Vitor Py"
-description: "Software engineer"
+description: "I create software & write about technology."
 url: "https://vitorpy.com/"
 title: "Vitor Py"
 
@@ -8,28 +8,24 @@ title: "Vitor Py"
 # about 5 elements are recomended
 github_username:  vitorpy
 twitter_username: PyVitor
-linkedin_username: vitorpy
-#stack_of_username: 61207
-#medium_username: vitorpy
-#telegram_username: vitorpyb
+#linkedin_username: vitorpy
+stack_of_username: 61207
+facebook_username: vitorpyb
+instagram_username: vitorpy
 email: vitor@hey.com
 
 avatar: yes
-#avatar_img_path: "imgs/avatar.jpg""
 # You can link to your GitHub image. That way it will get updated
 # automatically whenever you change your GitHub profile picture
 avatar_img_path: "https://avatars1.githubusercontent.com/u/12871"
-
 
 #front_img: yes
 #front_img_path: "imgs/background.jpg"
 #front_img_path: "https://external.url/image.jpg"
 
-
 favicon_img: yes
 favicon_img_path: "/favicon.ico"
 #favicon_img_path: "https://external.url/favicon.ico"
-
 
 # Build settings
 markdown: kramdown

@@ -1,5 +1,11 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 body {
-    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: rgba(0, 0, 0, 0.9);
     position: absolute; 
     top: 0;
@@ -26,16 +32,16 @@ body {
 }
 h1 {
     color: white;
-    font-weight: bold;
-    letter-spacing: 0.1em;
+    font-weight: 700;
+    /*letter-spacing: 0.1em;*/
     font-size: 4em;
-    font-family: 'Open Sans';
+    font-family: 'Inter';
     margin: -10px 0;
 }
 h3 {
     color: white;
     padding-bottom: 20px;
-    font-weight: thin;
+    font-weight: 200;
 }
 .content {
     padding-top: 100px;
