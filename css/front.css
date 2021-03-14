@@ -54,15 +54,16 @@ ul {
     padding: 0;
 }
 li {
-    border-radius: 100%;
+/*    border-radius: 100%;
     border: 2px solid white;
-    color: white;
+    color: white;*/
     margin: 8px;
     display: inline-block;
     list-style: none;
     width: 65px;
     height: 65px;
 }
+/*
 li:hover {
     color: white;
     text-decoration: none;
@@ -72,6 +73,7 @@ li:hover {
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0);
 }
+*/
 a {
     color: white;
     padding: 15px;
