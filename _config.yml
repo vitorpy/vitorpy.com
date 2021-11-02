@@ -1,41 +1,24 @@
-# Site settings
-name: "Vitor Py"
-description: "I create software & write about technology."
-url: "https://vitorpy.com/"
 title: "Vitor Py"
+author: "Vitor Py"
+subtitle: "I write about software."
 
-# Delete the lines you don't need
-# about 5 elements are recomended
-github_username:  vitorpy
-twitter_username: PyVitor
-#linkedin_username: vitorpy
-stack_of_username: 61207
-facebook_username: vitorpyb
-instagram_username: vitorpy
-email: vitor@hey.com
+url: "https://vitorpy.com"
+#baseurl: "/"
 
-avatar: yes
-# You can link to your GitHub image. That way it will get updated
-# automatically whenever you change your GitHub profile picture
-avatar_img_path: "https://avatars1.githubusercontent.com/u/12871"
+footer_only_homepage: true
+footer_url: "https://github.com/rahul-bothra"
+footer_text: "Theme by rahul-bothra"
 
-#front_img: yes
-#front_img_path: "imgs/background.jpg"
-#front_img_path: "https://external.url/image.jpg"
+profile-picture: assets/profile.png
+favicon_location: assets/favicon.ico
 
-favicon_img: yes
-favicon_img_path: "/favicon.ico"
-#favicon_img_path: "https://external.url/favicon.ico"
+permalink: /:year-:month-:day-:title/
+sass:
+    style: compressed
+    sass_dir: css
 
-# Build settings
-markdown: kramdown
-permalink: pretty
-
-compress_html:
-  clippings: all
-  comments: [""]
-  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
-  profile: false
-  blanklines: false
-  ignore:
-    envs: []
+navbar:
+ - name: "About"
+   link: "about"
+ - name: "Resume"
+   absolute-link: "https://rahul-bothra.github.io/CV.pdf"
