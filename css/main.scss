@@ -13,8 +13,8 @@ $small-width: 480px;
 
 body {
     margin: 0;
-    font-family: "Inconsolata";
-    background-color: #FFFFDD;
+    font-family: "Cormorant Garamond";
+    background-color: #FFFFFA;
     min-height: 100%;
 }
 a {
@@ -58,7 +58,10 @@ code {
     }
     li {
         list-style-type: none;
-        margin: 0 5px 0 10px;
+        margin: 0 5px 0 5px;
+    }
+    a {
+        color:#272727;
     }
 
     padding: 30px 0 20px 0;
@@ -215,6 +218,8 @@ code {
     }
     .profile-picture {
         width: 15%;
+        border-radius: 100%;
+        border: 1px solid black;
         margin: 5px 5px 5px 5px;
         float: right;
         p & {
