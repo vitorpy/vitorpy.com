@@ -23,9 +23,7 @@ plugins:
 navbar:
  - name: "About"
    link: "about"
- - name: "Twitter"
-   absolute-link: "https://twitter.com/PyVitor"
  - name: "GitHub"
    absolute-link: "https://github.com/vitorpy"
- - name: "LinkedIn"
-   absolute-link: "https://linkedin.com/in/vitorpy"
+ - name: "Mastodon"
+   absolute-link: "https://sigmoid.social/@vitorpy"

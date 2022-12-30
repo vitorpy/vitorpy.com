@@ -7,21 +7,30 @@
             {% if x.name == "LinkedIn" %}
                 {% assign x-class = "fab fa-linkedin" %}
                 {% assign x-name = "" %}
+                {% assign x-rel = "" %}
             {% elsif x.name == "Twitter" %}
                 {% assign x-class = "fab fa-twitter" %}
                 {% assign x-name = "" %}
+                {% assign x-rel = "" %}
             {% elsif x.name == "GitHub" %}
                 {% assign x-class = "fab fa-github" %}
                 {% assign x-name = "" %}
+                {% assign x-rel = "" %}
+            {% elsif x.name == "Mastodon" %}
+                {% assign x-class = "fab fa-mastodon" %}
+                {% assign x-name = "" %}
+                {% assign x-rel = "me" %}
             {% else %}
+                {% assign x-class = "" %}
                 {% assign x-name = x.name %}
+                {% assign x-rel = "" %}
             {% endif %}
             {% if x.absolute-link %}
                 {% assign x-url = x.absolute-link %}
             {% else %}
                 {% assign x-url = site.url | append: site.baseurl | append: "/" | append: x.link %}
             {% endif %}
-            <a class="{{ x-class }}" href="{{ x-url }}">{{ x-name }}</a>
+            <a rel="{{ x-rel }}" class="{{ x-class }}" href="{{ x-url }}">{{ x-name }}</a>
             {% if forloop.last == false %}&middot;{% endif %}
         </li>
         {% endfor %}
