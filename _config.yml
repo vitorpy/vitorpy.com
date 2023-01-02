@@ -27,3 +27,5 @@ navbar:
    absolute-link: "https://github.com/vitorpy"
  - name: "Mastodon"
    absolute-link: "https://sigmoid.social/@vitorpy"
+ - name: "Twitter"
+   absolute-link: "https://twitter.com/PyVitor"
