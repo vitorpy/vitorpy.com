@@ -5,7 +5,7 @@ title: About Me
 
 <img class="profile-picture" src="{{site.profile-picture}}">
 
-Hey folks. I'm currently working as a Hardware Systems Engineer for <a href="https://www.meta.com">Meta</a>. I've worked in the tech sector in a varity of positions: from software engineer to CTO. My passion is writing software.
+I'm currently working as a Hardware Systems Engineer for <a href="https://www.meta.com">Meta</a>. I've worked in the tech sector in a varity of positions: from software engineer to CTO.
 
 I've been a founder twice. Once for SIM, a now defunct startup doing computer vision applied to materials science. The second time for <a href="https://pillar.fi">Pillar</a>, an Ethereum wallet.
 
