@@ -1,5 +1,5 @@
-title: "Vitor Py"
-author: "Vitor Py"
+title: "Vitor Py Braga"
+author: "Vitor Py Braga"
 subtitle: "I write about software."
 
 url: "https://vitorpy.com"
@@ -19,6 +19,11 @@ sass:
 
 plugins:
   - jekyll-feed
+  - jekyll/mastodon_webfinger
+
+mastodon:
+  username: vitorpy
+  instance: sigmoid.social
 
 navbar:
  - name: "About"
