@@ -4,6 +4,7 @@ gem "jekyll", "~> 4.0.0"
 group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
+  gem 'jekyll-feed'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -18,6 +19,3 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 gem "webrick", "~> 1.7"
 
-gem 'jekyll-feed'
-
-gem "jekyll-mastodon_webfinger", "~> 1.0"

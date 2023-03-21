@@ -19,11 +19,6 @@ sass:
 
 plugins:
   - jekyll-feed
-  - jekyll/mastodon_webfinger
-
-mastodon:
-  username: vitorpy
-  instance: sigmoid.social
 
 navbar:
  - name: "About"
