@@ -19,7 +19,7 @@ sass:
 
 plugins:
   - jekyll-feed
-  - jejyll-sitemap
+  - jekyll-sitemap
 
 navbar:
  - name: "About"
