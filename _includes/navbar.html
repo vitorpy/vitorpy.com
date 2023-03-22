@@ -4,27 +4,16 @@
     <ul class="pull-right">
         {% for x in site.navbar %}
         <li class="pull-left">
-            {% if x.name == "Twitter" %}
-                {% assign x-class = "fab fa-twitter" %}
-                {% assign x-name = "" %}
-                {% assign x-rel = "" %}
-            {% elsif x.name == "GitHub" %}
-                {% assign x-class = "fab fa-github" %}
-                {% assign x-name = "" %}
-                {% assign x-rel = "" %}
-            {% elsif x.name == "Mastodon" %}
-                {% assign x-class = "fab fa-mastodon" %}
-                {% assign x-name = "" %}
+            {% if x.absolute-link %}
+                {% assign x-class = "fab fa-" | append: x.name | downcase %}
+                {% assign x-url = x.absolute-link %}
                 {% assign x-rel = "me" %}
+                {% assign x-name = "" %}
             {% else %}
                 {% assign x-class = "" %}
-                {% assign x-name = x.name %}
-                {% assign x-rel = "" %}
-            {% endif %}
-            {% if x.absolute-link %}
-                {% assign x-url = x.absolute-link %}
-            {% else %}
                 {% assign x-url = site.url | append: site.baseurl | append: "/" | append: x.link %}
+                {% assign x-rel = "" %}
+                {% assign x-name = x.name %}
             {% endif %}
             <a rel="{{ x-rel }}" class="{{ x-class }}" href="{{ x-url }}">{{ x-name }}</a>
             {% if forloop.last == false %}</li><li class="pull-left">&middot;{% endif %}

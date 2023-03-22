@@ -1,11 +1,6 @@
 ---
 
 ---
-// Customization Variables
-
-$max-width: 740px;
-$med-width: 600px;
-$small-width: 480px;
 
 // Basic
 
@@ -14,6 +9,9 @@ html {
   	--link-color: rgb(0, 112, 201);
   	--main-background-color: rgb(255, 255, 250);
   	--main-text-color: rgb(51, 51, 51);
+    --max-width: 740px;
+    --med-width: 600px;
+    --small-width: 480px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -63,7 +61,7 @@ code {
 }
 
 .container {
-    max-width: $max-width;
+    max-width: var(--max-width);
     margin: auto;
 }
 
@@ -144,7 +142,7 @@ code {
 // Mobile
 @media (max-width: 800px) {
     .container {
-        max-width: $med-width;
+        max-width: var(--med-width);
         transition: 0.3s ease all;
     }
 }
@@ -242,7 +240,7 @@ code {
             padding: 0;
             margin: 0;
         }
-        @media (max-width: $small-width) {
+        @media (max-width: var(--small-width)) {
             img {
                 margin-top: -5px;
             }
@@ -251,7 +249,7 @@ code {
     img {
         text-align: center;
         margin: 10px 10px 10px 10px;
-        max-width: $max-width;
+        max-width: var(--max-width);
     }
 
     .color-red {
