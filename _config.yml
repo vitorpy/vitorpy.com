@@ -1,15 +1,15 @@
 title: "Vitor Py Braga"
 author: "Vitor Py Braga"
-subtitle: "I write about software."
+subtitle: ""
 
 url: "https://vitorpy.com"
-#baseurl: "/"
+baseurl: ""
 
 footer_only_homepage: true
 footer_url: "https://github.com/rahul-bothra"
 footer_text: "Theme by rahul-bothra"
 
-profile-picture: https://avatars1.githubusercontent.com/u/12871
+profile_picture: https://avatars1.githubusercontent.com/u/12871
 favicon_location: assets/favicon.ico
 
 permalink: /:year-:month-:day-:title/
@@ -17,16 +17,10 @@ sass:
     style: compressed
     sass_dir: css
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-
 navbar:
- - name: "About"
-   link: "about"
- - name: "GitHub"
+ - name: "Writing"
+   link: "blog"
+ - name: "github"
    absolute-link: "https://github.com/vitorpy"
- - name: "Mastodon"
-   absolute-link: "https://mastodon.social/@vitorpy"
- - name: "Twitter"
+ - name: "x-twitter"
    absolute-link: "https://twitter.com/PyVitor"
