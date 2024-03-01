@@ -20,7 +20,7 @@
                 {% assign x-rel = "" %}
                 {% assign x-name = x.name %}
             {% endif %}
-            <a rel="{{ x-rel }}" class="{{ x-class }}" href="{{ x-url }}">
+            <a rel="{{ x-rel }}" class="navlink {{ x-class }}" href="{{ x-url }}">
                 {{ x-name }}
                 {% if x.farcast %}
                     <div id="warpcast-logo">{% include farcast.html %}</div>
