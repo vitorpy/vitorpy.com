@@ -16,7 +16,9 @@ sass:
 navbar:
  - name: "Writing"
    link: "blog"
+ - name: "warpcast"
+   farcast: "https://warpcast.com/vitorpy"
  - name: "github"
-   absolute-link: "https://github.com/vitorpy"
+   absolute_link: "https://github.com/vitorpy"
  - name: "x-twitter"
-   absolute-link: "https://twitter.com/PyVitor"
+   absolute_link: "https://twitter.com/PyVitor"

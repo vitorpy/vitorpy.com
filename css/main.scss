@@ -78,6 +78,14 @@ code {
     }
 }
 
+#warpcast-logo {
+    zoom: 60%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
 // index
 .post-card{
     margin-top:1em;
