@@ -28,14 +28,5 @@
     <link rel="stylesheet" href="{{ sitedir }}assets/fa/css/brands.css">
     <link rel="stylesheet" href="{{ sitedir }}assets/fa/css/fontawesome.css">
 
-    <!-- For Facebook -->
-    <meta property="og:title" content="{{ title }}" />
-    <meta property="og:image" itemprop="image" content="{{ site.profile-picture }}" />
-    <meta property="og:description" content="{{ desc }}" />
-
-    <!-- For Twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="{{ title }}" />
-    <meta name="twitter:description" content="{{ desc }}" />
-    <meta name="twitter:image" content="{{ favicon_location }}" />
+    {% feed_meta %}
 </head>

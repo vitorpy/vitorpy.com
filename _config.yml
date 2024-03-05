@@ -13,6 +13,9 @@ sass:
     style: compressed
     sass_dir: css
 
+plugins:
+  - jekyll-feed
+
 navbar:
  - name: "Writing"
    link: "blog"
