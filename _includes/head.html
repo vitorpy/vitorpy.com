@@ -6,27 +6,27 @@
         {% assign title = site.title %}
         {% assign desc = site.subtitle %}
     {% endif %}
-    {% assign sitedir = site.url | append: site.baseurl | append: "/" %}
-    {% assign favicon_location = sitedir | append: site.favicon_location %}
+    {% assign sitedir = site.url | append: site.baseurl %}
+    {% assign favicon_location = sitedir | append: "/" | append: site.favicon_location %}
 
     <title>{{ title }}</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="blog, {{ site.author }}, {{ site.title }}, jekyll">
+    <meta name="keywords" content="blog, {{ site.author }}, {{ site.title }}">
     <meta name="author" content="{{ site.author }}">
     <meta name="description" content="{{ desc }}">
 
-    <link href='{{ sitedir }}assets/fonts.css' rel='stylesheet' type='text/css'>
+    <link href='{{ sitedir }}/assets/fonts.css' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="{{ sitedir }}css/main.css">
+    <link rel="stylesheet" href="{{ sitedir }}/css/main.css">
     <link rel="icon" type="image/ico" href="{{ favicon_location }}">
     <link rel="shortcut-icon" type="image/ico" href="{{ favicon_location }}">
     
-    <link rel="stylesheet" href="{{ sitedir }}assets/fa/css/solid.css">
-    <link rel="stylesheet" href="{{ sitedir }}assets/fa/css/regular.css">
-    <link rel="stylesheet" href="{{ sitedir }}assets/fa/css/brands.css">
-    <link rel="stylesheet" href="{{ sitedir }}assets/fa/css/fontawesome.css">
+    <link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/solid.css">
+    <link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/regular.css">
+    <link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/brands.css">
+    <link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/fontawesome.css">
 
     {% feed_meta %}
 </head>
