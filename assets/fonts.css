@@ -1,16 +1,12 @@
 @font-face {
-  font-family: 'Guardian Egyptian Web';
-  src: url('./fonts/Guardian-Egyp-Web-Regular.eot');
-  src: url('./fonts/Guardian-Egyp-Web-Regular.eot?#iefix') format('embedded-opentype'),
-     url('./fonts/Guardian-Egyp-Web-Regular.woff') format('woff'),
-     url('./fonts/Guardian-Egyp-Web-Regular.ttf') format('truetype');
+  font-family: 'FF Meta Pro Regular';
+  src: url('./fonts/FFMetaProRegular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
 }
-  
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 400;
