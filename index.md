@@ -4,11 +4,13 @@ layout: default
 
 <img class="profile-picture" src="{{site.profile_picture}}">
 
-I've worked in the tech sector in a varity of positions: from software engineer to CTO.
+My background weaves through the tech sector. I've worn many hats, from software engineer to CTO.
 
-I've been a founder a couple times. Once for SIM, a now defunct startup doing computer vision applied to materials science. The second time for [Pillar](https://pillar.fi), an Ethereum wallet.
+I've also been a founder a few times. My first venture, SIM, applied computer vision to materials science (though it's no longer around). The second was [Pillar](https://pillar.fi), an Ethereum wallet.
 
-Computer vision was a big thing at some point of my career. I've worked for a couple years on [SPRING](http://www.dpi.inpe.br/spring/), an open source GIS with great image processing features. I've also done a stint working with biometrics, fingerprints in particular.
+I spent a couple years on [SPRING](http://www.dpi.inpe.br/spring/), an open source GIS with fantastic image processing capabilities. Biometrics, particularly fingerprints, also piqued my interest for a while. It was a fun challange, and I even have a [few old projects](https://github.com/vitorpy/qwsqviewer) from that time on GitHub.
+
+Since 2017 (with a brief detour at Big Tech!), blockchain projects have become a major focus. Decentralized finance (DeFi) and decentralized identity are areas I'm particularly passionate about.
 
 ### Contact Me
 
