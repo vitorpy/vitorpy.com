@@ -1,38 +1,18 @@
-/* cormorant-garamond-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/cormorant-garamond-v16-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('./fonts/cormorant-garamond-v16-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+  font-family: 'Guardian Egyptian Web';
+  src: url('./fonts/Guardian-Egyp-Web-Regular.eot');
+  src: url('./fonts/Guardian-Egyp-Web-Regular.eot?#iefix') format('embedded-opentype'),
+     url('./fonts/Guardian-Egyp-Web-Regular.woff') format('woff'),
+     url('./fonts/Guardian-Egyp-Web-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
   
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Roboto Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/RobotoMono-VariableFont_wght.ttf') format('ttf');
-  }
-
-  /* cormorant-garamond-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 500;
-    src: url('./fonts/cormorant-garamond-v16-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('./fonts/cormorant-garamond-v16-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
-  /* cormorant-garamond-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 700;
-    src: url('./fonts/cormorant-garamond-v16-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-         url('./fonts/cormorant-garamond-v16-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/RobotoMono-VariableFont_wght.ttf') format('ttf');
+}
