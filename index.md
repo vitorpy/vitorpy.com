@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img class="profile-picture" src="{{site.profile_picture}}">
+{% avatar {{ site.github_user }} size=90 %}
 
 My background weaves through the tech sector. I've worn many hats, from software engineer to CTO. While I'm ashamed to admit it, I even worked for a VC for a while. I'm sorry.
 

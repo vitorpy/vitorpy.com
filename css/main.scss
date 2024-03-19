@@ -102,7 +102,7 @@ code {
     .title{
         max-width: 500px;
         display: inline-block;
-        font-size: 30px;
+        font-size: 21px;
     }
     .details{
         @extend .pull-right;
@@ -230,8 +230,7 @@ code {
         padding: 0px 8px;
         font-style: italic;
     }
-    .profile-picture {
-        width: 15%;
+    .avatar {
         border-radius: 100%;
         border: 1px solid black;
         margin: 5px 5px 5px 5px;

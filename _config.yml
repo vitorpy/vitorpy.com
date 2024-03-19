@@ -5,8 +5,8 @@ subtitle: ""
 url: "https://vitorpy.com"
 baseurl: ""
 
-profile_picture: https://avatars1.githubusercontent.com/u/12871
 favicon_location: assets/favicon.ico
+github_user: vitorpy
 
 permalink: /:year-:month-:day-:title/
 sass:
@@ -15,6 +15,7 @@ sass:
 
 plugins:
   - jekyll-feed
+  - jekyll-avatar
 
 navbar:
  - name: "Writing"
