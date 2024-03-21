@@ -14,4 +14,4 @@ Since 2017 (with a brief detour at Big Tech!), blockchain projects have become a
 
 ### Contact Me
 
-I'm available at [vitor@vitorpy.com](mailto:vitor@vitorpy.com) or on [Telegram](https://t.me/vitorpyb).
+Email me at [vitor@vitorpy.com](mailto:vitor@vitorpy.com), or message me on [Telegram](https://t.me/vitorpyb).
