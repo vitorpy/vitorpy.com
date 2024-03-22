@@ -2,8 +2,10 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.0.0"
 
 group :jekyll_plugins do
-  gem 'jekyll-feed'
   gem 'jekyll-avatar'
+  gem 'jekyll-feed'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
   gem 'jemoji'
 end
 

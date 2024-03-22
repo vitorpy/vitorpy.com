@@ -14,8 +14,10 @@ sass:
     sass_dir: css
 
 plugins:
-  - jekyll-feed
   - jekyll-avatar
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jemoji
 
 navbar:
