@@ -16,6 +16,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-avatar
+  - jemoji
 
 navbar:
  - name: "Writing"
