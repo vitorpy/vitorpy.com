@@ -23,9 +23,9 @@ plugins:
 navbar:
  - name: "Writing"
    link: "blog"
+ - name: "x-twitter"
+   absolute_link: "https://twitter.com/PyVitor"
  - name: "warpcast"
    farcast: "https://warpcast.com/vitorpy"
  - name: "github"
    absolute_link: "https://github.com/vitorpy"
- - name: "x-twitter"
-   absolute_link: "https://twitter.com/PyVitor"
