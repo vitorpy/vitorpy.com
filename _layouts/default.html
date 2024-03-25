@@ -1,11 +1,17 @@
 ---
-layout: compress
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.html %}
+{% assign sitedir = site.url | append: site.baseurl %}
+
+<head>
+    {% include head.html %}
+    {% if layout.extended %}
+        {% include head-ext.html %}
+    {% endif %}
+</head>
 
 <body>
     <div class="container">
@@ -18,4 +24,7 @@ layout: compress
         </div>
         {% include footer.html %}
     </div>
+    {% if layout.extended %}
+        {% include js-initialization.html %}
+    {% endif %}
 </body>

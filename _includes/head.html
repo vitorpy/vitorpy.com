@@ -1,24 +1,21 @@
-<head>
-    {% assign sitedir = site.url | append: site.baseurl %}
-    {% assign favicon_location = sitedir | append: "/" | append: site.favicon_location %}
+{% assign favicon_location = sitedir | append: "/" | append: site.favicon_location %}
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    {% seo %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% feed_meta %}
+{% seo %}
 
-    <link rel='stylesheet' href='{{ sitedir }}/assets/fonts.css' type='text/css'>
-    <link rel='stylesheet' href='{{ sitedir }}/assets/rouge.css' type='text/css'>
-    <link rel="stylesheet" href="{{ sitedir }}/css/main.css" type='text/css'>
-    <link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/solid.css" type='text/css'>
-    <link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/regular.css" type='text/css'>
-    <link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/brands.css" type='text/css'>
-    <link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/fontawesome.css" type='text/css'>
+{% feed_meta %}
 
-    <link rel="icon" href="{{ favicon_location }}" type="image/ico">
-    <link rel="shortcut-icon" href="{{ favicon_location }}" type="image/ico">
-    
-    <link rel="sitemap" type="application/xml" title="sitemap" href="{{ sitedir }}/sitemap.xml">
-</head>
+<link rel='stylesheet' href='{{ sitedir }}/assets/fonts.css' type='text/css'>
+<link rel='stylesheet' href='{{ sitedir }}/assets/rouge.css' type='text/css'>
+<link rel="stylesheet" href="{{ sitedir }}/css/main.css" type='text/css'>
+<link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/solid.css" type='text/css'>
+<link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/regular.css" type='text/css'>
+<link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/brands.css" type='text/css'>
+<link rel="stylesheet" href="{{ sitedir }}/assets/fa/css/fontawesome.css" type='text/css'>
+
+<link rel="icon" href="{{ favicon_location }}" type="image/ico">
+<link rel="shortcut-icon" href="{{ favicon_location }}" type="image/ico">
+
+<link rel="sitemap" type="application/xml" title="sitemap" href="{{ sitedir }}/sitemap.xml">
