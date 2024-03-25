@@ -3,7 +3,6 @@
 ---
 
 // Basic
-
 html { 
 	--light-text-color: rgb(39, 39, 39);
   	--link-color: rgb(0, 112, 201);
@@ -87,14 +86,6 @@ code {
     filter: grayscale(100%);
 }
 
-#hey-logo {
-    zoom: 6%;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
 // index
 .post-card{
     margin-top:1em;
@@ -105,14 +96,12 @@ code {
         display: inline-block;
         font-size: 21px;
     }
+
     .details{
         @extend .pull-right;
         text-align: right;
         margin-left: 20px;
         font-size: 15px;
-    }
-    .subtitle{
-        max-width: 500px;
     }
 }
 
@@ -123,20 +112,19 @@ code {
 }
 
 // pages
-
 .page-title{
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
     line-height: 2;
 }
+
 .page-subtitle{
     text-align: center;
     margin-bottom: 1em;
 }
 
 // footer
-
 .footer{
     a {
         color: var(--main-text-color);
