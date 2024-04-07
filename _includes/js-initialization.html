@@ -10,3 +10,8 @@
     mermaid.initialize(config);
     window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 </script>
+
+<script>
+    hljs.registerLanguage('tact', tact);
+    document.querySelectorAll('.language-tact').forEach((element) => hljs.highlightElement(element));
+</script>

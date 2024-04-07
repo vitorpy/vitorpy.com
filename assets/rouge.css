@@ -3,7 +3,8 @@
 .highlighter-rouge div {
   border-radius: 5px;
   margin: 5px;
-  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
   padding-left: 5px;
   padding-right: 5px;
 }
