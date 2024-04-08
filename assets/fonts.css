@@ -21,8 +21,8 @@
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
+  font-family: 'Fira Mono';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/RobotoMono-VariableFont_wght.ttf') format('ttf');
+  src: url('./fonts/FiraMono-Regular.ttf') format('ttf');
 }
