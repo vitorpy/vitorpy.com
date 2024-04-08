@@ -7,6 +7,20 @@
 }
 
 @font-face {
+  font-family: 'FF Meta Pro Light';
+  src: url('./fonts/FFMetaProLight.ttf') format('truetype');
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'FF Meta Pro Thin';
+  src: url('./fonts/FFMetaProThin.ttf') format('truetype');
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
   font-family: 'Roboto Mono';
   font-style: normal;
   font-weight: 400;
