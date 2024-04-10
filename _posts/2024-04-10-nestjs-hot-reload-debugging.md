@@ -68,7 +68,8 @@ Lastly, a new entry on launch.json:
             "args": ["--config", "webpack-hmr-debug.config.js", "--watch"],
             "sourceMaps": true,
             "cwd": "${workspaceRoot}",
+            "console": "integratedTerminal",
         }
 ```
 
-Main difference from the Hot Reload page on nest website is the the `devtool: 'source-map'` in the webpack config.
+Main difference from the Hot Reload page on nest website is the the `devtool: 'source-map'` in the webpack config. I lost console output without the `console` line albeit I'm not sure why.
