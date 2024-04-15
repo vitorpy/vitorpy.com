@@ -17,7 +17,6 @@ yarn add --dev webpack webpack-cli webpack-node-externals ts-loader run-script-w
 
 Then I createed a `webpack-hmr-debug.config.js` file:
 
-
 ```javascript
 const webpack = require('webpack');
 const path = require('path');

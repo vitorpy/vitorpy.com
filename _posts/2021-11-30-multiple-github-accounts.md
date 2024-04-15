@@ -12,9 +12,9 @@ Host github.com
    HostName github.com
    User git
    IdentityFile ~/.ssh/id_rsa
-   
+
 # Work account-1
-Host github.com-work_user1    
+Host github.com-work_user1
    HostName github.com
    User git
    IdentityFile ~/.ssh/id_rsa_work_user1
@@ -37,13 +37,13 @@ vpb@vpb-inspiron-5379:~$ cat .gitconfig
 ```
 
 ```conf
-vpb@vpb-inspiron-5379:~$ cat .gitconfig-example 
+vpb@vpb-inspiron-5379:~$ cat .gitconfig-example
 [user]
     name = Alternate Account
     email = alternate.account@example.com
     signingkey = 123457890ABCDE
 [core]
-    sshCommand = ssh -i ~/.ssh/example-id_rsa -F /dev/null -o 'IdentitiesOnly yes' 
+    sshCommand = ssh -i ~/.ssh/example-id_rsa -F /dev/null -o 'IdentitiesOnly yes'
 ```
 
 Which is a somewhat cleaner solution.
