@@ -13,6 +13,9 @@ sass:
     style: compressed
     sass_dir: css
 
+exclude:
+  - commitlint.config.ts
+
 plugins:
   - jekyll-avatar
   - jekyll-feed
