@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/vitorpyb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://vitorpy.com
+  * I am vitorpyb (https://keybase.io/vitorpyb) on keybase.
+  * I have a public key ASBDL5UXxmHuz58ko_2k-7MLWvpVmcP9k4xM3CRlU1htYAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101d98dfac106f26b514aaa9a681438ad9d9ee3d3938d1a6414ad13b728934441830a",
+      "host": "keybase.io",
+      "kid": "0120432f9517c661eecf9f24a3fda4fbb30b5afa5599c3fd938c4cdc246553586d600a",
+      "uid": "5adf0d4e0d18a39f32090a52be36d019",
+      "username": "vitorpyb"
+    },
+    "merkle_root": {
+      "ctime": 1714576683,
+      "hash": "f398b41f0264209cdece647de7ca3dc97d9261ef73132476ba55c1d38a17f88ae76a72b383e2f9a501f533b5585bce123a693525e7ea437ba8a7c458027cc6bd",
+      "hash_meta": "67630eba12c1be2d1b532e38ca4db88f092692d3b5d0634064eb7e34a68328fd",
+      "seqno": 25690354
+    },
+    "service": {
+      "entropy": "ahL5iZTbXs3/qqfNDGSCmzuA",
+      "hostname": "vitorpy.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.8"
+  },
+  "ctime": 1714576721,
+  "expire_in": 504576000,
+  "prev": "ea7cd9c74fc12a7a84057c8807cf5017acd5856953dc09521b244495542e816f",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQy+VF8Zh7s+fJKP9pPuzC1r6VZnD/ZOMTNwkZVNYbWAKp3BheWxvYWTESpcCCMQg6nzZx0/BKnqEBXyIB89QF6zVhWlT3AlSGyRElVQugW/EIH86QhNhZUH8MdLmgTj6Z1bD33m8h24PCTyoOpd1mjGAAgHCo3NpZ8RAOdzZJS0DJ38hOkffflmo6XYWSBaUo42am5Hr4WNBpuzpKYpMfT5j7PQEaoZD1cav4TshqTfB2MtVGO21BOfMA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIM0Gq796Ny+J8EVTr5Jz7QGmESFwSZO/B6B+TT0SQKOpo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vitorpyb
+
+==================================================================
