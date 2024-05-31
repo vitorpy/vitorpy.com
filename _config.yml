@@ -13,16 +13,6 @@ sass:
     style: compressed
     sass_dir: css
 
-exclude:
-  - commitlint.config.ts
-
-plugins:
-  - jekyll-avatar
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jemoji
-
 navbar:
  - name: "Writing"
    link: "blog"
