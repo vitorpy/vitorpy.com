@@ -15,6 +15,9 @@ sass:
 
 exclude:
   - commitlint.config.ts
+  - vercel.json
+  - CNAME
+  - package.json
 
 plugins:
   - jekyll-avatar
