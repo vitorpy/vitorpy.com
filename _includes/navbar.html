@@ -1,0 +1,35 @@
+<div class="navbar">
+    <a class="navlink site-title" href="{{ site.url }}{{ site.baseurl}}/">{{ site.title }}</a>
+
+    <ul class="pull-right">
+        {% for x in site.navbar %}
+        <li class="pull-left">
+            {% if x.absolute_link %}
+                {% assign x-class = "fab fa-" | append: x.name | downcase %}
+                {% assign x-url = x.absolute_link %}
+                {% assign x-rel = "me" %}
+                {% assign x-name = "" %}
+            {% elsif x.farcast %}
+                {% assign x-class = "" %}
+                {% assign x-url = x.farcast %}
+                {% assign x-rel = "me" %}
+                {% assign x-name = "" %}
+            {% else %}
+                {% assign x-class = "" %}
+                {% assign x-url = site.url | append: site.baseurl | append: "/" | append: x.link %}
+                {% assign x-rel = "" %}
+                {% assign x-name = x.name %}
+            {% endif %}
+            <a rel="{{ x-rel }}" class="navlink {{ x-class }}" href="{{ x-url }}">
+                {{ x-name }}
+                {% if x.farcast %}
+                    <div id="warpcast-logo">{% include farcast.html %}</div>
+                {% endif %}
+            </a>
+            {% if forloop.last == false %}</li><li class="pull-left">&middot;{% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <hr>
+</div>

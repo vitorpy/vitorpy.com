@@ -1,0 +1,17 @@
+<script>
+    var config = {
+        startOnLoad:true,
+        theme: 'forest',
+        flowchart:{
+                useMaxWidth:false,
+                htmlLabels:true
+            }
+    };
+    mermaid.initialize(config);
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+
+<script>
+    hljs.registerLanguage('tact', tact);
+    document.querySelectorAll('.language-tact').forEach((element) => hljs.highlightElement(element));
+</script>
