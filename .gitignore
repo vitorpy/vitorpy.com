@@ -3,3 +3,10 @@ _site
 .jekyll-metadata
 *.swp
 .jekyll-cache
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Vercel
+.vercel/
