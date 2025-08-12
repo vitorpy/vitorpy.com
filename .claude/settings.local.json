@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(git add:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(jekyll serve:*)",
+      "Bash(bundle install:*)",
+      "Bash(bundle exec jekyll serve:*)"
     ],
     "deny": []
   }
