@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "jekyll", "~> 4.3.0"
+gem "jekyll", "~> 4.4.1"
 
 # Standard library gems for Ruby 3.3.6+ compatibility
 gem "csv"
