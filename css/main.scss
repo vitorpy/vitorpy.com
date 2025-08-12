@@ -107,19 +107,10 @@ html {
     color: var(--zb-fg);
   }
   
-  /* Logos */
-  #warpcast-logo {
-    zoom: 55%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.9;
-  }
-  
   /* Index: post cards */
   .post-card {
     margin: 1em 0;
     padding: 0.6em 0.4em;
-    border-top: 1px solid var(--zb-border);
   }
   .post-card .title {
     max-width: 500px;
