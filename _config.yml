@@ -24,11 +24,11 @@ plugins:
   - jemoji
 
 navbar:
- - name: "Writing"
+ - name: "Home"
+   link: "/"
+ - name: "Random Notes"
    link: "blog"
  - name: "x-twitter"
-   absolute_link: "https://twitter.com/PyVitor"
- - name: "warpcast"
-   farcast: "https://warpcast.com/vitorpy"
+   absolute_link: "https://x.com/PyVitor"
  - name: "github"
    absolute_link: "https://github.com/vitorpy"
