@@ -4,7 +4,7 @@ layout: default
 
 {% avatar {{ site.github_user }} size=90 %}
 
-I've worn many hats, from software engineer to CTO. While I'm ashamed to admit it, I even worked for a VC for a while. I'm sorry.
+I've worn many hats, from software engineer to CTO.
 
 I've also been a founder a few times. My first venture, SIM, applied computer vision to materials science (though it's no longer around). The second was [Pillar](https://pillar.fi), an Ethereum wallet.
 
