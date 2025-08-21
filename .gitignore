@@ -11,3 +11,6 @@ package-lock.json
 # Vercel
 .vercel/
 .vercel
+
+# Claude
+.claude/settings.local.json
