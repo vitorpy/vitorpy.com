@@ -5,7 +5,14 @@
       "Bash(mkdir:*)",
       "Bash(jekyll serve:*)",
       "Bash(bundle install:*)",
-      "Bash(bundle exec jekyll serve:*)"
+      "Bash(bundle exec jekyll serve:*)",
+      "Bash(git checkout:*)",
+      "Bash(source:*)",
+      "Bash(rvm use:*)",
+      "Bash(bundle exec:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }
