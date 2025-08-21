@@ -66,28 +66,6 @@
   font-display: swap;
 }
 
-/* FF Meta Pro fonts (fallback) */
-@font-face {
-  font-family: 'FF Meta Pro Regular';
-  src: url('./fonts/FFMetaProRegular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: 'FF Meta Pro Light';
-  src: url('./fonts/FFMetaProLight.ttf') format('truetype');
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: 'FF Meta Pro Thin';
-  src: url('./fonts/FFMetaProThin.ttf') format('truetype');
-  font-style: normal;
-  font-stretch: normal;
-}
 
 @font-face {
   font-family: 'Fira Mono';

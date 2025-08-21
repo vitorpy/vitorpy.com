@@ -14,10 +14,11 @@ sass:
     sass_dir: css
 
 exclude:
-  - commitlint.config.ts
+  - api
   - vercel.json
-  - CNAME
   - package.json
+  - .pre-commit-config.yaml
+  - commitlint.config.ts
 
 plugins:
   - jekyll-avatar

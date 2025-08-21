@@ -9,7 +9,10 @@
       "Bash(git checkout:*)",
       "Bash(source:*)",
       "Bash(rvm use:*)",
-      "Bash(bundle exec:*)"
+      "Bash(bundle exec:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }
