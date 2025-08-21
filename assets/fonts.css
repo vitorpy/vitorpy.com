@@ -1,3 +1,72 @@
+/* Aujournuit fonts */
+@font-face {
+  font-family: 'Aujournuit';
+  src: url('./fonts/Aujournuit-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  /* Force consistent metrics */
+  size-adjust: 100%;
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Aujournuit';
+  src: url('./fonts/Aujournuit-Airy.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 100%;
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Aujournuit';
+  src: url('./fonts/Aujournuit-Wide.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 100%;
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Aujournuit';
+  src: url('./fonts/Aujournuit-Condensed.woff2') format('woff2'),
+       url('./fonts/Aujournuit-Condensed.otf') format('opentype');
+  font-weight: 400;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aujournuit';
+  src: url('./fonts/Aujournuit-Densed.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  size-adjust: 100%;
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Aujournuit Variable';
+  src: url('./fonts/Aujournuit-VariableVF.woff2') format('woff2-variations'),
+       url('./fonts/Aujournuit-VariableVF.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
+  font-display: swap;
+}
+
+/* FF Meta Pro fonts (fallback) */
 @font-face {
   font-family: 'FF Meta Pro Regular';
   src: url('./fonts/FFMetaProRegular.ttf') format('truetype');

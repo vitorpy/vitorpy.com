@@ -40,10 +40,18 @@ html {
     background: var(--zb-bg);
     color: var(--zb-fg);
     margin: 0;
-    font-family: "FF Meta Pro Regular", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Aujournuit", "FF Meta Pro Regular", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
     min-height: 100%;
+    /* Chrome-specific fixes for Aujournuit baseline issues */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none; /* Disable synthetic bold/italic */
+    -webkit-text-stroke: 0.04px; /* Force consistent rendering */
+    text-rendering: geometricPrecision;
+    transform: rotate(0.0000000001deg); /* Force GPU layer */
   }
   
   a {
@@ -139,7 +147,8 @@ html {
   
   /* Pages */
   .page-title {
-    font-family: "FF Meta Pro Light", sans-serif;
+    font-family: "Aujournuit", "FF Meta Pro Light", sans-serif;
+    font-weight: 300;
     text-align: center;
     font-size: xx-large;
     line-height: 1.3;
