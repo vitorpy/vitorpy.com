@@ -36,3 +36,5 @@ navbar:
    absolute_link: "https://x.com/PyVitor"
  - name: "github"
    absolute_link: "https://github.com/vitorpy"
+ - name: "bluesky"
+   absolute_link: "https://bsky.app/profile/pyvitor.bsky.social"
