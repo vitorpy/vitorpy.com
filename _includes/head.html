@@ -7,6 +7,10 @@
 
 {% feed_meta %}
 
+<!-- Preload critical fonts -->
+<link rel="preload" href="{{ sitedir }}/assets/fonts/BerkeleyMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ sitedir }}/assets/fonts/BerkeleyMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
 <link rel='stylesheet' href='{{ sitedir }}/assets/fonts.css' type='text/css'>
 <link rel='stylesheet' href='{{ sitedir }}/assets/rouge.css' type='text/css'>
 <link rel="stylesheet" href="{{ sitedir }}/css/main.css" type='text/css'>
