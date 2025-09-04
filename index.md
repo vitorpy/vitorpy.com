@@ -14,6 +14,8 @@ Since 2017 (with a brief detour at Big Tech!), blockchain projects have become a
 
 I'm currently exploring how to build better trading venues with privacy tech with [Darklake](https://darklake.fi).
 
+In the words of nikolai mushegian: "Larpers who self-style as CEOs or CTOs or VCs are a bigger problem than the establishment. They can’t build anything and will sell you out in 2 seconds."
+
 ### Contact Me
 
 Email me at [vitor@vitorpy.com](mailto:vitor@vitorpy.com), or message me on [Telegram](https://t.me/vitorpyb).

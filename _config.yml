@@ -14,7 +14,6 @@ sass:
     sass_dir: css
 
 exclude:
-  - api
   - vercel.json
   - package.json
   - .pre-commit-config.yaml

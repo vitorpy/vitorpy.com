@@ -1,17 +1,9 @@
 {
   "version": 2,
-  "functions": {
-    "api/fp-data.js": {
-      "maxDuration": 10
-    }
-  },
   "buildCommand": "bundle install && bundle exec jekyll build",
   "outputDirectory": "_site",
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
-  ],
   "env": {
     "RUBY_VERSION": "3.3.6"
   }
