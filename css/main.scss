@@ -62,10 +62,12 @@ html {
   .navlink { text-decoration: none; }
   
   hr {
-    margin: 5px 0;
-    border: 0;
-    border-top: 1px solid var(--zb-sep-top);
-    border-bottom: 1px solid var(--zb-sep-bot);
+    overflow: visible;
+    height: 1px;
+    margin: 0.5rem 0;
+    color: var(--zb-fg-dim);
+    border: none;
+    border-top: 1px dashed var(--zb-fg-dim);
   }
   
   code {
@@ -202,8 +204,10 @@ html {
     content: "";
     display: block;
     width: 50%;
-    border-top: 0.5px solid var(--zb-sep-top);
-    border-bottom: 0.5px solid var(--zb-sep-bot);
+    height: 1px;
+    border: none;
+    border-top: 1px dashed var(--zb-fg-dim);
+    margin-top: 0.5rem;
   }
   
   .content ol { counter-reset: list; padding: 0 30px; }
