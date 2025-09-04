@@ -6,9 +6,9 @@ layout: default
 
 I'm currently exploring how to build better trading venues with privacy tech at [Darklake](https://darklake.fi).
 
-Previously, I've worn many hats, from software engineer to CTO. I have been a founder a few times. My first venture, SIM, applied computer vision to materials science (though it's no longer around). The second was [Pillar](https://pillar.fi), an Ethereum wallet.
+Previously, I've worn many hats, from software engineer to CTO. I have been a founder a few times. My first venture, SIM, applied computer vision to materials science. The second was [Pillar](https://pillar.fi), an Ethereum wallet.
 
-Over my life, I worked on [GIS](https://www.dpi.inpe.br/spring/), [biometrics](https://github.com/vitorpy/qwsqviewer), and plenty of random fields.
+Over my life, I worked on [GIS](https://www.dpi.inpe.br/spring/), [biometrics](https://github.com/vitorpy/qwsqviewer), computer vision, and plenty of random fields.
 
 
 ### Contact Me
