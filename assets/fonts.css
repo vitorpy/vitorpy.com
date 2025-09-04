@@ -1,75 +1,32 @@
-/* Aujournuit fonts */
+/* Berkeley Mono fonts */
 @font-face {
-  font-family: 'Aujournuit';
-  src: url('./fonts/Aujournuit-Regular.woff2') format('woff2');
+  font-family: 'Berkeley Mono';
+  src: url('./fonts/BerkeleyMono-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  /* Force consistent metrics */
-  size-adjust: 100%;
-  ascent-override: 95%;
-  descent-override: 25%;
-  line-gap-override: 0%;
 }
 
 @font-face {
-  font-family: 'Aujournuit';
-  src: url('./fonts/Aujournuit-Airy.woff2') format('woff2');
-  font-weight: 300;
+  font-family: 'Berkeley Mono';
+  src: url('./fonts/BerkeleyMono-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
-  size-adjust: 100%;
-  ascent-override: 95%;
-  descent-override: 25%;
-  line-gap-override: 0%;
 }
 
 @font-face {
-  font-family: 'Aujournuit';
-  src: url('./fonts/Aujournuit-Wide.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  size-adjust: 100%;
-  ascent-override: 95%;
-  descent-override: 25%;
-  line-gap-override: 0%;
-}
-
-@font-face {
-  font-family: 'Aujournuit';
-  src: url('./fonts/Aujournuit-Condensed.woff2') format('woff2'),
-       url('./fonts/Aujournuit-Condensed.otf') format('opentype');
+  font-family: 'Berkeley Mono';
+  src: url('./fonts/BerkeleyMono-Oblique.woff2') format('woff2');
   font-weight: 400;
-  font-stretch: condensed;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Aujournuit';
-  src: url('./fonts/Aujournuit-Densed.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
+  font-family: 'Berkeley Mono';
+  src: url('./fonts/BerkeleyMono-Bold-Oblique.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
   font-display: swap;
-  size-adjust: 100%;
-  ascent-override: 95%;
-  descent-override: 25%;
-  line-gap-override: 0%;
-}
-
-@font-face {
-  font-family: 'Aujournuit Variable';
-  src: url('./fonts/Aujournuit-VariableVF.woff2') format('woff2-variations'),
-       url('./fonts/Aujournuit-VariableVF.ttf') format('truetype-variations');
-  font-weight: 100 900;
-  font-stretch: 50% 200%;
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/FiraMono-Regular.ttf') format('ttf');
 }
