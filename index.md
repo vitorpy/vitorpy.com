@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/profile.jpg" alt="Vitor Py's avatar" class="avatar" width="90" height="90">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/profile_optimized.jpg" alt="Vitor Py's avatar" class="avatar" width="90" height="90">
 
 I'm currently exploring how to build better trading venues with privacy tech at [Darklake](https://darklake.fi).
 
