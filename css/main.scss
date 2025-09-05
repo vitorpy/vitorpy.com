@@ -109,15 +109,32 @@ html {
     padding: 30px 0 20px 0;
   }
 
+  .navbar .nav-items {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
   .navbar ul {
     display: inline-block;
-    margin: 0 0 0 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .nav-text {
+    margin: 0;
     padding: 5px 0;
   }
+  
+  .navbar .nav-icons {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
   .navbar li {
     list-style: none;
     margin: 0 5px;
     color: var(--zb-fg-muted);
+    display: inline-block;
   }
   .navbar .site-title {
     font-size: 32px;
@@ -195,12 +212,32 @@ html {
   
   @media (max-width: 500px) {
     .navbar {
-      vertical-align: middle;
       text-align: center;
     }
-    .pull-right { float: none; }
+    .navbar .site-title {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .navbar .nav-items {
+      display: block;
+      text-align: center;
+    }
+    .navbar .nav-text,
+    .navbar .nav-icons {
+      display: block;
+      margin: 5px 0;
+      padding: 0;
+    }
+    .navbar .nav-text li,
+    .navbar .nav-icons li {
+      display: inline-block;
+      margin: 0 8px;
+    }
+    .pull-right { 
+      float: none;
+      display: block;
+    }
     .container { max-width: 83%; }
-    .navbar ul { margin-top: 5px; }
   }
   
   /* Typography & content */
