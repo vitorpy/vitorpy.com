@@ -16,6 +16,7 @@ sass:
 exclude:
   - nginx.conf
   - deploy.sh
+  - extract_icons.py
   - package.json
   - .pre-commit-config.yaml
   - commitlint.config.ts
