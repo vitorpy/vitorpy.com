@@ -7,7 +7,6 @@ gem "base64"
 gem "bigdecimal"
 
 group :jekyll_plugins do
-  gem 'jekyll-avatar'
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
