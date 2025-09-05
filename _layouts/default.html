@@ -8,9 +8,6 @@
 
 <head>
     {% include head.html %}
-    {% if layout.extended %}
-        {% include head-ext.html %}
-    {% endif %}
 </head>
 
 <body>
@@ -24,7 +21,4 @@
         </div>
         {% include footer.html %}
     </div>
-    {% if layout.extended %}
-        {% include js-initialization.html %}
-    {% endif %}
 </body>
