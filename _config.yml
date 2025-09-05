@@ -14,7 +14,8 @@ sass:
     sass_dir: css
 
 exclude:
-  - vercel.json
+  - nginx.conf
+  - deploy.sh
   - package.json
   - .pre-commit-config.yaml
   - commitlint.config.ts
