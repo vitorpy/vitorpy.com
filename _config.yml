@@ -28,8 +28,8 @@ plugins:
   - jemoji
 
 navbar:
- - name: "Home"
-   link: "/"
+ - name: "About"
+   link: ""
  - name: "Random Notes"
    link: "blog"
  - name: "x-twitter"
