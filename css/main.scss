@@ -36,6 +36,10 @@ html {
   /* Base */
   * { box-sizing: border-box; }
   
+  html {
+    height: 100%;
+  }
+  
   body {
     background: var(--zb-bg);
     color: var(--zb-fg);
