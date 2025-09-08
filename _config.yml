@@ -18,8 +18,6 @@ exclude:
   - deploy.sh
   - extract_icons.py
   - package.json
-  - .pre-commit-config.yaml
-  - commitlint.config.ts
 
 plugins:
   - jekyll-feed
