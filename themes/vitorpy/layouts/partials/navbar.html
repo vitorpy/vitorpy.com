@@ -1,0 +1,35 @@
+<div class="navbar">
+    <a class="navlink navlink-icon site-title" href="{{ .Site.BaseURL }}/">{{ .Site.Title }}</a>
+
+    <div class="nav-items pull-right">
+        <ul class="nav-text">
+            {{ range .Site.Params.navbar }}
+                {{ if not (or .absolute_link .farcast) }}
+                <li class="pull-left">
+                    <a class="navlink" href="{{ $.Site.BaseURL }}/{{ .link }}">{{ .name }}</a>
+                </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+        <ul class="nav-icons">
+            {{ range .Site.Params.navbar }}
+                {{ if or .absolute_link .farcast }}
+                <li class="pull-left">
+                    {{ if .absolute_link }}
+                        {{ $class := printf "fab fa-%s" (lower .name) }}
+                        <a rel="me" class="navlink navlink-icon {{ $class }}" href="{{ .absolute_link }}" aria-label="{{ title .name }}">
+                            <span class="sr-only">{{ title .name }}</span>
+                        </a>
+                    {{ else if .farcast }}
+                        <a rel="me" class="navlink navlink-icon" href="{{ .farcast }}" aria-label="Farcast">
+                            <span class="sr-only">Farcast</span>
+                        </a>
+                    {{ end }}
+                </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </div>
+
+    <hr>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on Vitor Py</title><link>https://vitorpy.com/tags/git/</link><description>Recent content in Git on Vitor Py</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vitorpy.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Dealing with multiple GitHub Accounts</title><link>https://vitorpy.com/blog/2021-11-30-multiple-github-accounts/</link><pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate><guid>https://vitorpy.com/blog/2021-11-30-multiple-github-accounts/</guid><description>&lt;p>The first Google result for &amp;ldquo;multiple GitHub accounts&amp;rdquo; right now points to a &lt;a href="https://www.freecodecamp.org/news/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca/">solution&lt;/a> using a SSH config change:&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-conf" data-lang="conf"># Personal account, - the default config
+Host github.com
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/id_rsa
+
+# Work account-1
+Host github.com-work_user1
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/id_rsa_work_user1
+&lt;/code>&lt;/pre>&lt;p>I&amp;rsquo;m not a big fan of this solution as it requires one to use an alias instead of the proper hostname for the remote. I ended up doing an alternative solution using Git&amp;rsquo;s &lt;a href="https://blog.jiayu.co/2019/02/conditional-git-configuration/">conditionals&lt;/a>.&lt;/p></description></item></channel></rss>

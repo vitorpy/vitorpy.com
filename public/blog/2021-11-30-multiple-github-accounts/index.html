@@ -1,0 +1,30 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Dealing with multiple GitHub Accounts - Vitor Py</title><meta name=description content="Vitor Py's personal website"><meta name=author content="Vitor Py"><meta name=generator content="Hugo 0.142.0"><link rel=preload href=/assets/profile_optimized.jpg as=image><link rel=preload href=/assets/fonts/BerkeleyMono-Regular.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/assets/fonts/BerkeleyMono-Bold.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/assets/fa/webfonts/fa-brands-subset.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/assets/fonts.css type=text/css><link rel=stylesheet href=/assets/rouge.css type=text/css><link rel=stylesheet href=/css/main.css type=text/css><link rel=stylesheet href=/assets/icons.css type=text/css><link rel=icon href=/assets/favicon.ico type=image/ico><link rel=shortcut-icon href=/assets/favicon.ico type=image/ico><link rel=sitemap type=application/xml title=sitemap href=/sitemap.xml></head><body><div class=container><div class=navbar><a class="navlink navlink-icon site-title" href=https://vitorpy.com//>Vitor Py</a><div class="nav-items pull-right"><ul class=nav-text><li class=pull-left><a class=navlink href=https://vitorpy.com//>About</a></li><li class=pull-left><a class=navlink href=https://vitorpy.com//blog>Random Notes</a></li></ul><ul class=nav-icons><li class=pull-left><a rel=me class="navlink navlink-icon fab fa-x-twitter" href=https://x.com/PyVitor aria-label=X-Twitter><span class=sr-only>X-Twitter</span></a></li><li class=pull-left><a rel=me class="navlink navlink-icon fab fa-bluesky" href=https://bsky.app/profile/vitorpy.com aria-label=Bluesky><span class=sr-only>Bluesky</span></a></li><li class=pull-left><a rel=me class="navlink navlink-icon fab fa-github" href=https://github.com/vitorpy aria-label=Github><span class=sr-only>Github</span></a></li></ul></div><hr></div><div class=page-title>Dealing with multiple GitHub Accounts</div><div class=content><p>The first Google result for &ldquo;multiple GitHub accounts&rdquo; right now points to a <a href=https://www.freecodecamp.org/news/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca/>solution</a> using a SSH config change:</p><pre tabindex=0><code class=language-conf data-lang=conf># Personal account, - the default config
+Host github.com
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa
+
+# Work account-1
+Host github.com-work_user1
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_work_user1
+</code></pre><p>I&rsquo;m not a big fan of this solution as it requires one to use an alias instead of the proper hostname for the remote. I ended up doing an alternative solution using Git&rsquo;s <a href=https://blog.jiayu.co/2019/02/conditional-git-configuration/>conditionals</a>.</p><pre tabindex=0><code class=language-conf data-lang=conf>vpb@vpb-inspiron-5379:~$ cat .gitconfig
+[user]
+    name = Vitor Py Braga
+    email = 12871+vitorpy@users.noreply.github.com
+    signingkey = 6A2AF2C050EB3B3A
+[commit]
+    gpgsign = true
+[alias]
+    logs = log --show-signature
+[includeIf &#34;gitdir:~/example/&#34;]
+    path = ~/.gitconfig-example
+</code></pre><pre tabindex=0><code class=language-conf data-lang=conf>vpb@vpb-inspiron-5379:~$ cat .gitconfig-example
+[user]
+    name = Alternate Account
+    email = alternate.account@example.com
+    signingkey = 123457890ABCDE
+[core]
+    sshCommand = ssh -i ~/.ssh/example-id_rsa -F /dev/null -o &#39;IdentitiesOnly yes&#39;
+</code></pre><p>Which is a somewhat cleaner solution.</p></div><div class=footer><a rel=license href=http://creativecommons.org/licenses/by/4.0/>This work is licensed under a Creative Commons Attribution 4.0 International License</a>.</div></div></body></html>

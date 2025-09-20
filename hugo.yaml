@@ -1,0 +1,31 @@
+baseURL: https://vitorpy.com
+disablePathToLower: true
+languageCode: en-us
+title: Vitor Py
+theme: vitorpy
+
+params:
+  author: Vitor Py
+  description: Vitor Py's personal website
+  github_user: vitorpy
+
+  navbar:
+    - name: About
+      link: ""
+    - name: Random Notes
+      link: blog
+    - name: x-twitter
+      absolute_link: https://x.com/PyVitor
+    - name: bluesky
+      absolute_link: https://bsky.app/profile/vitorpy.com
+    - name: github
+      absolute_link: https://github.com/vitorpy
+
+menu:
+  main:
+    - name: About
+      url: /
+      weight: 1
+    - name: Random Notes
+      url: /blog/
+      weight: 2

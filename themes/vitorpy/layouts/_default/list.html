@@ -1,0 +1,23 @@
+{{ define "main" }}
+    {{ $has_post := false }}
+    {{ range .Pages }}
+        {{ if not .Params.private }}
+            {{ $has_post = true }}
+            <div class="post-card">
+                <a class="title" href="{{ .Permalink }}">
+                    {{ .Title }}
+                </a>
+
+                <div class="details">
+                    <b>{{ .Date.Format "02 January 2006" }}</b>
+                </div>
+            </div>
+            {{ if not (eq . (index $.Pages (sub (len $.Pages) 1))) }}
+            <hr>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ if not $has_post }}
+        <div class="no-post">I've lost the ink pot. Check back later...</div>
+    {{ end }}
+{{ end }}

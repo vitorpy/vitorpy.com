@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tact on </title>
+    <link>//localhost:1313/tags/tact/</link>
+    <description>Recent content in Tact on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 08 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/tact/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Tact primer for Solidity developers - part 1</title>
+      <link>//localhost:1313/draft/2024-04-08-tact-primer-for-solidity-devs/</link>
+      <pubDate>Mon, 08 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/draft/2024-04-08-tact-primer-for-solidity-devs/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Solidity veterans, ever considered taking a walk on the wild side with TON and its smart contract language, Tact? This tutorial will be your trusty compass. While both Solidity and Tact empower you to build smart contracts, the underlying blockchains, particularly in terms of state management and asynchronous calls, have some key distinctions. Grasping these differences is essential for a smooth trip.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s start with a superficial look into syntax and structure.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
