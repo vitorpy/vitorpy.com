@@ -1,0 +1,37 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# Editor
+.claude/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Build
+*.log
+*.tmp
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Ruby
+.bundle/
+vendor/bundle/
