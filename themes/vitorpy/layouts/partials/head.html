@@ -13,10 +13,11 @@
 <link rel="preload" href="{{ "assets/fonts/BerkeleyMono-Bold.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "assets/fa/webfonts/fa-brands-subset.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 
-<link rel='stylesheet' href='{{ "assets/fonts.css" | relURL }}' type='text/css'>
-<link rel='stylesheet' href='{{ "assets/rouge.css" | relURL }}' type='text/css'>
-<link rel="stylesheet" href="{{ "css/main.css" | relURL }}" type='text/css'>
-<link rel="stylesheet" href="{{ "assets/icons.css" | relURL }}" type='text/css'>
+{{- $fonts := resources.Get "css/fonts.css" -}}
+{{- $main := resources.Get "css/main.css" -}}
+{{- $icons := resources.Get "css/icons.css" -}}
+{{- $css := slice $fonts $main $icons | resources.Concat "css/bundle.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 <link rel="icon" href="{{ "assets/favicon.ico" | relURL }}" type="image/ico">
 <link rel="shortcut-icon" href="{{ "assets/favicon.ico" | relURL }}" type="image/ico">

@@ -21,6 +21,16 @@ params:
     - name: github
       absolute_link: https://github.com/vitorpy
 
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    noClasses: false
+    style: zenburn  # Similar to your previous rouge theme
+    tabWidth: 4
+
 menu:
   main:
     - name: About
