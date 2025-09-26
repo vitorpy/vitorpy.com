@@ -1,6 +1,8 @@
 {{ define "title" }}{{ end }}
 {{ define "main" }}
-    <img src="{{ "assets/profile_optimized.jpg" | relURL }}" alt="Vitor Py's avatar" class="avatar" width="90" height="90">
+    {{- $image := resources.Get "images/profile_cropped.jpg" -}}
+    {{- $resized := $image.Resize "180x webp q85" -}}
+    <img src="{{ $resized.RelPermalink }}" alt="Vitor Py's avatar" class="avatar" width="{{ $resized.Width }}" height="{{ $resized.Height }}">
 
     {{ .Content }}
 {{ end }}
