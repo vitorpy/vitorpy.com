@@ -7,9 +7,8 @@ This site is built with [Hugo](https://gohugo.io/), a fast and modern static sit
 ## Tech Stack
 
 - **Generator**: Hugo v0.139.3
-- **Theme**: Custom minimal theme lightly based on Zenburn
+- **Theme**: Custom minimal theme lightly based on [Zenburn](https://github.com/jnurmine/Zenburn)
 - **Syntax Highlighting**: Chroma with zenburn theme
-- **Hosting**: Hetzner
 - **Fonts**: [Berkley Mono](https://usgraphics.com/products/berkeley-mono) and FontAwesome
 
 ## Features
@@ -30,4 +29,4 @@ This site is built with [Hugo](https://gohugo.io/), a fast and modern static sit
 
 ## Philosophy
 
-This site follows a minimal, privacy-respecting approach. No external dependencies, no tracking, just content served efficiently. The entire site works perfectly with JavaScript disabled and loads in under a second on most connections.
+This site follows a minimal, privacy-respecting approach. No external dependencies, no tracking. The entire site works perfectly with JavaScript disabled and loads in under a second on most connections.
