@@ -30,3 +30,5 @@ This site is built with [Hugo](https://gohugo.io/), a fast and modern static sit
 ## Philosophy
 
 This site follows a minimal, privacy-respecting approach. No external dependencies, no tracking. The entire site works perfectly with JavaScript disabled and loads in under a second on most connections.
+
+The source code is available on [GitHub](https://github.com/vitorpy/vitorpy.com/)
