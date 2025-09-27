@@ -27,3 +27,10 @@
 {{ end -}}
 
 <link rel="sitemap" type="application/xml" title="sitemap" href="{{ "sitemap.xml" | relURL }}">
+
+{{- if .Params.latex -}}
+<!-- KaTeX for math rendering -->
+<link rel="stylesheet" href="{{ "assets/katex/katex.min.css" | relURL }}">
+<script defer src="{{ "assets/katex/katex.min.js" | relURL }}"></script>
+<script defer src="{{ "assets/katex/auto-render.min.js" | relURL }}" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+{{- end -}}

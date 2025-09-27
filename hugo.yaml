@@ -30,6 +30,19 @@ markup:
     noClasses: false
     style: zenburn  # Similar to your previous rouge theme
     tabWidth: 4
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - $$
+              - $$
+            - - \begin
+              - \end
+          inline:
+            - - $
+              - $
 
 menu:
   main:
