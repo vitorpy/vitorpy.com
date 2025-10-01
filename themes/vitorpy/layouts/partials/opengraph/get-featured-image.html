@@ -2,7 +2,7 @@
 {{ $featured := $images.GetMatch "*feature*" }}
 {{ if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end }}
 {{ if not $featured }}
- {{ $featured = resources.Get "/opengraph/gohugoio-card-base-1.png" }}
+ {{ $featured = resources.Get "opengraph/gohugoio-card-base-1.png" }}
  {{ $size := 80 }}
  {{ $title := $.LinkTitle }}
  {{ if gt (len $title) 20 }}
