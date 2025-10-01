@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'Berkeley Mono';
-  src: url('./fonts/BerkeleyMono-Bold-Oblique.woff2') format('woff2');
+  src: url('/assets/fonts/BerkeleyMono-Bold-Oblique.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
