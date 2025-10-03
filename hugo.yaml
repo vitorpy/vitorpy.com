@@ -21,7 +21,7 @@ params:
     - name: github
       absolute_link: https://github.com/vitorpy
     - name: tangled
-      absolute_link: https://tangled.org/vitorpy
+      absolute_link: https://tangled.org/vitorpy.com
 
 markup:
   highlight:
