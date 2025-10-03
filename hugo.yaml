@@ -20,6 +20,8 @@ params:
       absolute_link: https://bsky.app/profile/vitorpy.com
     - name: github
       absolute_link: https://github.com/vitorpy
+    - name: tangled
+      absolute_link: https://tangled.org/vitorpy
 
 markup:
   highlight:

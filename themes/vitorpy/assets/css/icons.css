@@ -1,10 +1,11 @@
 /* Minimal FontAwesome icons - only what we use */
+{{- $font := resources.Get "fa/webfonts/fa-brands-subset.woff2" | fingerprint -}}
 @font-face {
   font-family: 'Font Awesome 6 Brands';
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("/assets/fa/webfonts/fa-brands-subset.woff2") format("woff2");
+  src: url("{{ $font.RelPermalink }}") format("woff2");
 }
 
 .fab {
@@ -22,3 +23,4 @@
 .fa-github::before { content: "\f09b"; }
 .fa-x-twitter::before { content: "\e61b"; }
 .fa-bluesky::before { content: "\e671"; }
+.fa-tangled::before { content: "\f0001"; }

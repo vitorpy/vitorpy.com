@@ -12,14 +12,15 @@
 {{ partial "opengraph/twitter_cards.html" . }}
 
 <!-- Preload critical resources -->
+{{- $fontSubset := resources.Get "fa/webfonts/fa-brands-subset.woff2" | fingerprint -}}
 <link rel="preload" href="{{ "assets/profile_optimized.jpg" | relURL }}" as="image">
 <link rel="preload" href="{{ "assets/fonts/BerkeleyMono-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "assets/fonts/BerkeleyMono-Bold.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ "assets/fa/webfonts/fa-brands-subset.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ $fontSubset.RelPermalink }}" as="font" type="font/woff2" crossorigin>
 
 {{- $fonts := resources.Get "css/fonts.css" -}}
 {{- $main := resources.Get "css/main.css" -}}
-{{- $icons := resources.Get "css/icons.css" -}}
+{{- $icons := resources.Get "css/icons.css" | resources.ExecuteAsTemplate "css/icons-processed.css" . -}}
 {{- $css := slice $fonts $main $icons | resources.Concat "css/bundle.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
