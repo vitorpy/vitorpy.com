@@ -15,7 +15,11 @@
 
 <!-- Preload critical resources -->
 {{- $fontSubset := resources.Get "fa/webfonts/fa-brands-subset.woff2" | fingerprint -}}
-<link rel="preload" href="{{ "assets/profile_optimized.jpg" | relURL }}" as="image">
+{{- if .IsHome -}}
+{{- $profileImage := resources.Get "images/profile_cropped.jpg" -}}
+{{- $profileResized := $profileImage.Resize "180x webp q85" -}}
+<link rel="preload" href="{{ $profileResized.RelPermalink }}" as="image">
+{{- end -}}
 <link rel="preload" href="{{ "assets/fonts/BerkeleyMono-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "assets/fonts/BerkeleyMono-Bold.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ $fontSubset.RelPermalink }}" as="font" type="font/woff2" crossorigin>
