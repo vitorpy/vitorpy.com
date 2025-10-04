@@ -4,6 +4,13 @@ languageCode: en-us
 title: Vitor Py
 theme: vitorpy
 
+ignoreFiles:
+  - '\\.py$'
+  - '\\.sh$'
+  - '^nginx\\.conf$'
+  - '^package\\.json$'
+  - '^tangled.*\\.svg$'
+
 params:
   author: Vitor Py
   description: Vitor Py's personal website
