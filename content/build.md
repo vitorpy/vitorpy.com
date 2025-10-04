@@ -14,8 +14,6 @@ This site is built with [Hugo](https://gohugo.io/), a fast and modern static sit
 ## Features
 
 - No JavaScript (100% functional without JS)
-- No tracking or analytics
-- All first-party resources
 - Single bundled CSS file (~6KB)
 - Optimized fonts (FontAwesome subset)
 - Automatic image optimization via Hugo's asset pipeline
