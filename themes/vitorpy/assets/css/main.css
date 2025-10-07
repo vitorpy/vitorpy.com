@@ -230,6 +230,7 @@ html {
       display: block;
       margin: 5px 0;
       padding: 0;
+      text-align: center;
     }
     .navbar .nav-text li,
     .navbar .nav-icons li {
@@ -239,6 +240,9 @@ html {
     .pull-right {
       float: none;
       display: block;
+    }
+    .pull-left {
+      float: none;
     }
     .container { max-width: 83%; }
   }
