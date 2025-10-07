@@ -20,8 +20,8 @@
 {{- $profileResized := $profileImage.Resize "180x webp q85" -}}
 <link rel="preload" href="{{ $profileResized.RelPermalink }}" as="image">
 {{- end -}}
-<link rel="preload" href="{{ "assets/fonts/BerkeleyMono-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ "assets/fonts/BerkeleyMono-Bold.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "assets/fonts/CMUSansSerif.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "assets/fonts/CMUTypewriter-Regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ $fontSubset.RelPermalink }}" as="font" type="font/woff2" crossorigin>
 
 {{- $fonts := resources.Get "css/fonts.css" -}}

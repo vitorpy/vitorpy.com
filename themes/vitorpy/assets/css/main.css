@@ -40,7 +40,7 @@ html {
     background: var(--zb-bg);
     color: var(--zb-fg);
     margin: 0;
-    font-family: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: "Computer Modern Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -84,7 +84,7 @@ html {
   }
 
   code {
-    font-family: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: "Computer Modern Typewriter", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-optical-sizing: auto;
     font-style: normal;
     line-height: 1.2;
@@ -131,12 +131,14 @@ html {
   }
 
   .navbar li {
+    font-family: "Computer Modern Typewriter", monospace;
     list-style: none;
     margin: 0 5px;
     color: var(--zb-fg-muted);
     display: inline-block;
   }
   .navbar .site-title {
+    font-family: "Computer Modern Typewriter", monospace;
     font-size: 32px;
     display: inline-block;
     color: var(--zb-fg);
@@ -174,7 +176,7 @@ html {
 
   /* Pages */
   .page-title {
-    font-family: "Berkeley Mono", monospace;
+    font-family: "Computer Modern Sans", sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: xx-large;
@@ -190,6 +192,7 @@ html {
 
   /* Footer */
   .footer {
+    font-family: "Computer Modern Typewriter", monospace;
     text-align: center;
     font-size: small;
     margin: 2em 0 1em;
@@ -246,6 +249,7 @@ html {
     color: var(--zb-fg);
   }
   .content h1, .content h2, .content h3, .content h4 {
+    font-family: "Computer Modern Typewriter", monospace;
     margin-block-start: 2em !important;
     margin-block-end: 0 !important;
     color: var(--zb-fg);

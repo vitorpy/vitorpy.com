@@ -9,7 +9,7 @@ This site is built with [Hugo](https://gohugo.io/), a fast and modern static sit
 - **Generator**: Hugo {{< hugo-version >}}
 - **Theme**: Custom minimal theme lightly based on [Zenburn](https://github.com/jnurmine/Zenburn)
 - **Syntax Highlighting**: Chroma with zenburn theme
-- **Fonts**: [Berkeley Mono](https://usgraphics.com/products/berkeley-mono) and FontAwesome
+- **Fonts**: [Computer Modern](https://github.com/vsalvino/computer-modern) (Sans and Typewriter variants) and FontAwesome
 
 ## Features
 
