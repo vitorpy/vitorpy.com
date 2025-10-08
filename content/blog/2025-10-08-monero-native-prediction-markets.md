@@ -1,9 +1,12 @@
 ---
+date: "2025-10-08T00:00:00Z"
+tags: 
+    - monero
+    - defidate: "2021-11-30T00:00:00Z"
+    - fhe
 title: Monero Native Prediction Markets with FHE
 latex: true
 ---
-
-# Monero Native Prediction Markets with FHE
 
 ## Background
 
