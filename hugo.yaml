@@ -31,6 +31,25 @@ params:
       absolute_link: https://tangled.org/vitorpy.com
 
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+        title: true
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
   highlight:
     anchorLineNos: false
     codeFences: true
