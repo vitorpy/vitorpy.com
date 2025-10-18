@@ -1,5 +1,5 @@
 name: Deploy to VPS
-# Testing Tangled Spingle deployment
+# Testing Tangled Spingle deployment - v2
 
 on:
   push:
