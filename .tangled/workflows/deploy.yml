@@ -11,6 +11,11 @@ dependencies:
     - openssh
 
 steps:
+  - name: "Setup container user"
+    command: |
+      echo "root:x:0:0:root:/root:/bin/bash" >> /etc/passwd
+      echo "root:x:0:" >> /etc/group
+
   - name: "Build Hugo site"
     command: "hugo --minify"
 
