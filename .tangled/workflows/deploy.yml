@@ -70,7 +70,7 @@ steps:
   - name: "Sync to GitHub"
     command: |
       git remote add github git@github.com:vitorpy/vitorpy.com.git || true
-      git push github HEAD:main
+      git push --force github HEAD:main
 
   - name: "Cleanup"
     command: "rm -f /root/.ssh/deploy_key /root/.ssh/id_ed25519"
