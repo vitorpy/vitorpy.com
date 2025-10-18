@@ -64,5 +64,10 @@ steps:
         $VPS_USER@$VPS_HOST \
         "chown -R nginx:nginx /var/www/vitorpy.com && chmod -R 755 /var/www/vitorpy.com"
 
+  - name: "Sync to GitHub"
+    command: |
+      git remote add github git@github.com:vitorpy/vitorpy.com.git || true
+      git push github HEAD:main
+
   - name: "Cleanup"
     command: "rm -f /root/.ssh/deploy_key"
