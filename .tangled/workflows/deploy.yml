@@ -13,25 +13,25 @@ dependencies:
 steps:
   - name: "Setup container user"
     command: |
+      mkdir -p /root
       echo "root:x:0:0:root:/root:/bin/bash" >> /etc/passwd
       echo "root:x:0:" >> /etc/group
+      export HOME=/root
 
   - name: "Build Hugo site"
     command: "hugo --minify"
 
   - name: "Setup SSH"
     command: |
-      mkdir -p ~/.ssh
-      printf '%s\n' "$VPS_SSH_KEY" > ~/.ssh/deploy_key
-      chmod 600 ~/.ssh/deploy_key
-      ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts
-      echo "Testing SSH connection..."
-      ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $VPS_USER@$VPS_HOST "echo 'SSH connection successful'"
+      mkdir -p /root/.ssh
+      printf '%s\n' "$VPS_SSH_KEY" > /root/.ssh/deploy_key
+      chmod 600 /root/.ssh/deploy_key
+      ssh-keyscan -H $VPS_HOST >> /root/.ssh/known_hosts
 
   - name: "Deploy with rsync"
     command: |
       rsync -avz --delete \
-        -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+        -e "ssh -i /root/.ssh/deploy_key -o StrictHostKeyChecking=no" \
         --exclude='.git' \
         --exclude='node_modules' \
         public/ $VPS_USER@$VPS_HOST:/var/www/vitorpy.com/
@@ -39,14 +39,14 @@ steps:
   - name: "Deploy nginx config if changed"
     command: |
       if [ -f nginx.conf ]; then
-        ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
+        ssh -i /root/.ssh/deploy_key -o StrictHostKeyChecking=no \
           $VPS_USER@$VPS_HOST \
           "mkdir -p /tmp/deploy"
 
-        scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
+        scp -i /root/.ssh/deploy_key -o StrictHostKeyChecking=no \
           nginx.conf $VPS_USER@$VPS_HOST:/tmp/deploy/nginx.conf
 
-        ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
+        ssh -i /root/.ssh/deploy_key -o StrictHostKeyChecking=no \
           $VPS_USER@$VPS_HOST \
           "if ! diff -q /tmp/deploy/nginx.conf /etc/nginx/conf.d/vitorpy.conf > /dev/null 2>&1; then \
             cp /tmp/deploy/nginx.conf /etc/nginx/conf.d/vitorpy.conf && \
@@ -60,9 +60,9 @@ steps:
 
   - name: "Set permissions"
     command: |
-      ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
+      ssh -i /root/.ssh/deploy_key -o StrictHostKeyChecking=no \
         $VPS_USER@$VPS_HOST \
         "chown -R nginx:nginx /var/www/vitorpy.com && chmod -R 755 /var/www/vitorpy.com"
 
   - name: "Cleanup"
-    command: "rm -f ~/.ssh/deploy_key"
+    command: "rm -f /root/.ssh/deploy_key"
