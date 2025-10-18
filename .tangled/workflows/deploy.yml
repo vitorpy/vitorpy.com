@@ -69,6 +69,7 @@ steps:
 
   - name: "Sync to GitHub"
     command: |
+      git fetch --unshallow origin || true
       git remote add github git@github.com:vitorpy/vitorpy.com.git || true
       git push --force github HEAD:main
 
