@@ -16,16 +16,10 @@ steps:
 
   - name: "Setup SSH"
     command: |
-      echo "Checking secrets..."
-      echo "VPS_HOST: ${VPS_HOST:-NOT_SET}"
-      echo "VPS_USER: ${VPS_USER:-NOT_SET}"
-      echo "VPS_SSH_KEY length: ${#VPS_SSH_KEY}"
       mkdir -p ~/.ssh
       echo "$VPS_SSH_KEY" > ~/.ssh/deploy_key
       chmod 600 ~/.ssh/deploy_key
-      ls -la ~/.ssh/deploy_key
       ssh-keyscan -H $VPS_HOST >> ~/.ssh/known_hosts
-      echo "SSH setup complete"
 
   - name: "Deploy with rsync"
     command: |
