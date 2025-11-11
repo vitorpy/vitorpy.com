@@ -27,11 +27,8 @@ new_font.em = font.em
 # X/Twitter: U+E61B (58907)
 # Bluesky: U+E671 (58993)
 # Mastodon: U+F4F6 (62710)
-# Tangled: U+F0001 (983041) - custom private use area
 codepoints = [0xf09b, 0xe61b, 0xe671, 0xf4f6]
-custom_svgs = {
-    0xf0001: "tangled-clean.svg"  # Tangled.org icon
-}
+custom_svgs = {}
 
 # Copy only the glyphs we need from Font Awesome
 for cp in codepoints:
