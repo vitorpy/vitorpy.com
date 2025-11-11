@@ -4,6 +4,9 @@
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.author }}">
+{{ if and (not .IsHome) (eq .Type "blog") }}
+<meta name="fediverse:creator" content="{{ .Site.Params.fediverse_creator }}">
+{{ end }}
 
 {{ hugo.Generator }}
 
