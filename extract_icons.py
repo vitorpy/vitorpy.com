@@ -26,8 +26,9 @@ new_font.em = font.em
 # GitHub: U+F09B (61595)
 # X/Twitter: U+E61B (58907)
 # Bluesky: U+E671 (58993)
+# Mastodon: U+F4F6 (62710)
 # Tangled: U+F0001 (983041) - custom private use area
-codepoints = [0xf09b, 0xe61b, 0xe671]
+codepoints = [0xf09b, 0xe61b, 0xe671, 0xf4f6]
 custom_svgs = {
     0xf0001: "tangled-clean.svg"  # Tangled.org icon
 }
