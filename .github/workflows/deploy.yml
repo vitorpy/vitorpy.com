@@ -62,9 +62,9 @@ jobs:
             ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
               $VPS_USER@$VPS_HOST \
               "if ! diff -q /tmp/deploy/nginx.conf /etc/nginx/conf.d/vitorpy.conf > /dev/null 2>&1; then \
-                cp /tmp/deploy/nginx.conf /etc/nginx/conf.d/vitorpy.conf && \
-                nginx -t && \
-                systemctl reload nginx && \
+                sudo cp /tmp/deploy/nginx.conf /etc/nginx/conf.d/vitorpy.conf && \
+                sudo nginx -t && \
+                sudo systemctl reload nginx && \
                 echo 'Nginx config updated and reloaded'; \
               else \
                 echo 'Nginx config unchanged'; \
