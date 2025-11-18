@@ -78,7 +78,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
             $VPS_USER@$VPS_HOST \
-            "chown -R nginx:nginx /var/www/vitorpy.com && chmod -R 755 /var/www/vitorpy.com"
+            "chown -R http:http /var/www/vitorpy.com && chmod -R 755 /var/www/vitorpy.com"
         env:
           VPS_USER: ${{ secrets.VPS_USER }}
           VPS_HOST: ${{ secrets.VPS_HOST }}
