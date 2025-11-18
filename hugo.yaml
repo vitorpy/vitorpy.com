@@ -23,7 +23,7 @@ params:
     - name: Random Notes
       link: blog
     - name: x-twitter
-      absolute_link: https://x.com/PyVitor
+      absolute_link: https://x.com/vitorpy
     - name: bluesky
       absolute_link: https://bsky.app/profile/vitorpy.com
     - name: github
