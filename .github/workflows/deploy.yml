@@ -75,15 +75,5 @@ jobs:
           VPS_HOST: ${{ secrets.VPS_HOST }}
           VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
 
-      - name: Set permissions
-        run: |
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
-            $VPS_USER@$VPS_HOST \
-            "chown -R http:http /var/www/vitorpy.com && chmod -R 755 /var/www/vitorpy.com"
-        env:
-          VPS_USER: ${{ secrets.VPS_USER }}
-          VPS_HOST: ${{ secrets.VPS_HOST }}
-          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
-
       - name: Cleanup
         run: rm -f ~/.ssh/deploy_key ~/.ssh/id_ed25519
