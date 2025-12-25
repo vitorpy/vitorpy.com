@@ -358,3 +358,11 @@ html {
     outline-offset: 2px;
   }
   .post-card:hover { background: rgba(240, 223, 175, 0.06); }
+
+  /* Mermaid diagrams - light background for dark theme */
+  pre.mermaid {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
