@@ -1,0 +1,22 @@
+# Hugo-ATProto Configuration
+# Publishes blog posts to ATProto via Leaflet schema
+
+# Hugo source directory (. means current directory)
+hugo_dir: .
+
+# ATProto PDS settings
+atproto:
+  pds_url: https://bsky.social
+  # Handle and app password are loaded from environment variables:
+  # - ATPROTO_HANDLE (set in GitHub Secrets)
+  # - ATPROTO_APP_PASSWORD (set in GitHub Secrets)
+  handle: ${ATPROTO_HANDLE}
+
+# Content settings
+content:
+  blog_dir: content/blog  # Relative to hugo_dir
+  static_dir: static      # Relative to hugo_dir
+
+# State file location (tracks which posts have been published)
+# This file will be committed back to the repo to persist state across runs
+state_file: .hugo-atproto-state.json

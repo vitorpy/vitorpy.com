@@ -13,4 +13,4 @@ I'm a fan of [Moxie Marlinspike](https://moxie.org)'s take: "In general, I hope 
 
 ### Contact Me
 
-Email me at [vitor@vitorpy.com](mailto:vitor@vitorpy.com), or message me on [Telegram](https://t.me/vitorpyb).
+Email me at [vitor@vitorpy.com](mailto:vitor@vitorpy.com), or message me on [Telegram](https://t.me/vitorpy).
