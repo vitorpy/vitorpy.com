@@ -25,9 +25,8 @@ new_font.em = font.em
 # The codepoints we want to keep:
 # GitHub: U+F09B (61595)
 # X/Twitter: U+E61B (58907)
-# Bluesky: U+E671 (58993)
-# Mastodon: U+F4F6 (62710)
-codepoints = [0xf09b, 0xe61b, 0xe671, 0xf4f6]
+# LinkedIn: U+F08C (61580)
+codepoints = [0xf09b, 0xe61b, 0xf08c]
 custom_svgs = {}
 
 # Copy only the glyphs we need from Font Awesome

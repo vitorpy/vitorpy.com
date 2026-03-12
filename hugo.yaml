@@ -15,7 +15,6 @@ params:
   author: Vitor Py
   description: Vitor Py's personal website
   github_user: vitorpy
-  fediverse_creator: "@vitorpy@mathstodon.xyz"
 
   navbar:
     - name: About
@@ -24,12 +23,10 @@ params:
       link: blog
     - name: x-twitter
       absolute_link: https://x.com/vitorpy
-    - name: bluesky
-      absolute_link: https://bsky.app/profile/vitorpy.com
+    - name: linkedin
+      absolute_link: https://linkedin.com/in/vitorpy
     - name: github
       absolute_link: https://github.com/vitorpy
-    - name: mastodon
-      mastodon: https://mathstodon.xyz/@vitorpy
 
 markup:
   goldmark:
