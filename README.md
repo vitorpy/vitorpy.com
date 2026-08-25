@@ -20,4 +20,9 @@ to the public URL. For example,
 `site/pages/blog/example/index.tex` becomes `/blog/example/index.html`.
 Documents under `site/drafts/` are not built.
 
+## Deployment
+
+Pushes to `main` run `.github/workflows/deploy.yml`, build the site, and publish
+`public/` to GitHub Pages. The workflow does not require VPS or SSH secrets.
+
 Do not push GitHub `main` without explicit confirmation: it triggers production deployment.

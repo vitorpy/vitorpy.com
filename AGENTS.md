@@ -5,7 +5,7 @@
 **NEVER push to GitHub `main` without explicit user confirmation.**
 
 This repository has automatic deployment enabled. A push to GitHub `main` runs
-`.github/workflows/deploy.yml` and deploys to vitorpy.com.
+`.github/workflows/deploy.yml` and publishes the site through GitHub Pages.
 
 **Before pushing:**
 1. Build and test locally: `./scripts/build`
