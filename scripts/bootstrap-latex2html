@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIRECTORY=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+REPOSITORY_DIRECTORY=$(cd -- "$SCRIPT_DIRECTORY/.." && pwd)
+TOOLS_DIRECTORY="$REPOSITORY_DIRECTORY/.tools"
+INSTALL_DIRECTORY="$TOOLS_DIRECTORY/latex2html"
+LATEX2HTML_COMMIT=8de149ed754a1cadd944b04efb3e2a42026c5f0c
+COMMIT_MARKER="$INSTALL_DIRECTORY/.commit"
+LATEX2HTML_EXECUTABLE="$INSTALL_DIRECTORY/bin/latex2html"
+
+if [[ -x "$LATEX2HTML_EXECUTABLE" && -f "$COMMIT_MARKER" ]] &&
+   [[ $(<"$COMMIT_MARKER") == "$LATEX2HTML_COMMIT" ]]; then
+    printf '%s\n' "$LATEX2HTML_EXECUTABLE"
+    exit 0
+fi
+
+for required_command in git make perl latex pdflatex pdftocairo gs; do
+    if ! command -v "$required_command" >/dev/null 2>&1; then
+        printf 'Missing required command: %s\n' "$required_command" >&2
+        exit 1
+    fi
+done
+
+mkdir -p "$TOOLS_DIRECTORY"
+SOURCE_PARENT=$(mktemp -d "$TOOLS_DIRECTORY/latex2html-source.XXXXXX")
+SOURCE_DIRECTORY="$SOURCE_PARENT/latex2html"
+
+cleanup() {
+    if [[ "$SOURCE_PARENT" == "$TOOLS_DIRECTORY"/latex2html-source.* ]]; then
+        rm -rf -- "$SOURCE_PARENT"
+    fi
+}
+trap cleanup EXIT
+
+if [[ -e "$INSTALL_DIRECTORY" ]]; then
+    if [[ "$INSTALL_DIRECTORY" != "$REPOSITORY_DIRECTORY/.tools/latex2html" ]]; then
+        printf 'Refusing to replace unexpected install path: %s\n' "$INSTALL_DIRECTORY" >&2
+        exit 1
+    fi
+    rm -rf -- "$INSTALL_DIRECTORY"
+fi
+
+git clone --filter=blob:none --no-checkout \
+    https://github.com/latex2html/latex2html.git "$SOURCE_DIRECTORY"
+git -C "$SOURCE_DIRECTORY" checkout --detach "$LATEX2HTML_COMMIT"
+
+(
+    cd "$SOURCE_DIRECTORY"
+    ./configure \
+        --prefix="$INSTALL_DIRECTORY" \
+        --with-texpath="$INSTALL_DIRECTORY/texinputs" \
+        --enable-svg \
+        --disable-png \
+        --disable-gif \
+        --enable-paths
+    make
+    make check
+    make install
+)
+
+printf '%s\n' "$LATEX2HTML_COMMIT" > "$COMMIT_MARKER"
+printf '%s\n' "$LATEX2HTML_EXECUTABLE"

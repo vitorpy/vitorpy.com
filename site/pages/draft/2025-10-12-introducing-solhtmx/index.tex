@@ -1,0 +1,151 @@
+\documentclass{article}
+\input{site/includes/preamble}
+\title{solhtmx: Simpler Solana Interactions with HTML Attributes}
+\author{Vitor Py}
+\date{2025-10-12}
+
+\begin{document}
+\input{site/includes/header}
+\maketitle
+
+\section{Introduction}
+
+solhtmx is a Solana-native extension to htmx that simplifies blockchain interactions using HTML attributes. It lets you:
+
+\begin{itemize}
+\item Connect wallets
+
+\item Sign transactions
+
+\item Interact with Solana
+
+\end{itemize}
+
+All using declarative HTML, without complex JavaScript.
+
+\section{Problem}
+
+Building blockchain apps typically involves:
+
+\begin{enumerate}
+\item Complex wallet SDKs
+
+\item Managing connection state
+
+\item Handling transaction signing
+
+\item Coordinating UI updates
+
+\end{enumerate}
+
+This means lots of JavaScript and careful orchestration of async operations.
+
+\section{Solution}
+
+solhtmx extends htmx with Solana-specific attributes:
+
+\begin{itemize}
+\item \texttt{sol-connect} - Connect wallet
+
+\item \texttt{sol-sign} - Sign transactions
+
+\item \texttt{sol-wallet-address} - Show wallet address
+
+\item \texttt{sol-trigger} - React to blockchain events
+
+\end{itemize}
+
+\subsection{Connecting a Wallet}
+
+\begin{verbatim}
+<button sol-connect="true"
+        hx-get="/api/wallet-status"
+        hx-target="#wallet-info">
+  Connect Wallet
+</button>
+\end{verbatim}
+
+Clicking the button:
+
+\begin{enumerate}
+\item Prompts wallet connection
+
+\item Triggers \texttt{/api/wallet-status}
+
+\item Includes wallet address in headers
+
+\item Updates \texttt{\#wallet-info} with response
+
+\end{enumerate}
+
+\subsection{Signing Transactions}
+
+\begin{verbatim}
+<button sol-sign="true"
+        hx-post="/api/prepare-transfer"
+        hx-vals='{"amount": "0.1"}'
+        hx-target="#result">
+  Send 0.1 SOL
+</button>
+\end{verbatim}
+
+\begin{enumerate}
+\item htmx POSTs to \texttt{/api/prepare-transfer}
+
+\item Server builds unsigned transaction
+
+\item Server returns HTML + transaction
+
+\item solhtmx prompts wallet signature
+
+\item Submits signed transaction
+
+\item Updates \texttt{\#result} on confirmation
+
+\end{enumerate}
+
+The server just builds transactions and returns HTML. solhtmx does the rest.
+
+\section{Features}
+
+\begin{itemize}
+\item Wallet connection
+
+\item Transaction signing
+
+\item Wallet address display
+
+\item Event system for updates
+
+\item Automatic header injection
+
+\end{itemize}
+
+\section{Usage}
+
+\begin{verbatim}
+<script src="https://unpkg.com/htmx.org@2.0.0"></script>
+<script src="https://unpkg.com/@solana/web3.js@latest"></script>
+<script src="path/to/solhtmx.js"></script>
+\end{verbatim}
+
+Configure network via meta tags:
+
+\begin{verbatim}
+<meta name="sol-network" content="devnet">
+<meta name="sol-commitment" content="confirmed">
+\end{verbatim}
+
+\section{Repo \& Docs}
+
+Code, examples, docs:
+\textbf{\href{https://github.com/vitorpy/solhtmx}{github.com/vitorpy/solhtmx}}
+
+Open source (WTFPL). Contributions welcome.
+
+\section{Conclusion}
+
+solhtmx simplifies Solana app development using declarative HTML attributes. Give it a try and share your feedback.
+
+\input{site/includes/footer}
+\end{document}

@@ -5,10 +5,9 @@ _site/
 .jekyll-metadata
 vendor/
 
-# Hugo
+# Generated site
 public/
-resources/
-.hugo_build.lock
+.tools/
 
 # Editor
 .claude/

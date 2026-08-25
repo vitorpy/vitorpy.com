@@ -1,6 +1,6 @@
 #!/bin/bash
 # Bootstrap script for fresh Arch Linux install
-# Usage: curl -sSL https://your-site.com/bootstrap.sh | bash
+# Usage: curl -sSL https://vitorpy.com/bootstrap.sh | bash
 
 set -e
 
@@ -26,7 +26,7 @@ fi
 
 # Clone dotfiles via HTTPS (no SSH key needed yet)
 echo "==> Cloning dotfiles..."
-chezmoi init --apply https://tangled.sh/vitorpy.com/dotfiles
+chezmoi init --apply https://github.com/vitorpy/dotfiles.git
 
 # Restore SSH and GPG keys from Bitwarden
 echo "==> Restoring SSH and GPG keys from Bitwarden..."
@@ -41,7 +41,7 @@ ssh-add ~/.ssh/id_ed25519
 # Switch chezmoi to SSH remote
 echo "==> Switching chezmoi remote to SSH..."
 cd $(chezmoi source-path)
-git remote set-url origin git@tangled.sh:vitorpy.com/dotfiles
+git remote set-url origin git@github.com:vitorpy/dotfiles.git
 
 # Install all packages
 echo "==> Installing all packages..."

@@ -16,14 +16,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          extended: true
+      - name: Install LaTeX2HTML dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends \
+            git \
+            ghostscript \
+            make \
+            perl \
+            poppler-utils \
+            python3 \
+            texlive-latex-base \
+            texlive-latex-extra
 
-      - name: Build Hugo site
-        run: hugo --minify
+      - name: Build LaTeX site
+        run: ./scripts/build
 
       - name: Setup SSH
         run: |

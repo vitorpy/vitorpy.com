@@ -1,0 +1,110 @@
+\documentclass{article}
+\input{site/includes/preamble}
+\title{Zignocchio - Building Solana Programs in Zig}
+\author{Vitor Py}
+\date{2025-10-20}
+
+\begin{document}
+\input{site/includes/header}
+\maketitle
+
+\href{https://github.com/vitorpy/zignocchio}{Zignocchio} is a zero-dependency SDK for writing Solana programs in Zig. It uses the standard BPF target and \href{https://github.com/blueshift-gg/sbpf-linker}{sbpf-linker} to compile Zig code to Solana's eBPF bytecode.
+
+\section{Prerequisites}
+
+\begin{verbatim}
+# Install sbpf-linker from master (includes latest fixes)
+cargo install --git https://github.com/blueshift-gg/sbpf-linker.git
+
+# Install Zig 0.15.2 or later
+\end{verbatim}
+
+\section{Hello World Program}
+
+Here's a minimal Solana program that logs a message:
+
+\begin{verbatim}
+const sdk = @import("sdk/zignocchio.zig");
+
+export fn entrypoint(input: [*]u8) u64 {
+    return @call(.always_inline, sdk.createEntrypoint(processInstruction), .{input});
+}
+
+fn processInstruction(
+    program_id: *const sdk.Pubkey,
+    accounts: []sdk.AccountInfo,
+    instruction_data: []const u8,
+) sdk.ProgramResult {
+    sdk.logMsg("Hello from Zignocchio!");
+    return .{};
+}
+\end{verbatim}
+
+The \texttt{createEntrypoint} function deserializes Solana's input buffer into typed parameters. It uses zero-copy deserialization - no allocations occur.
+
+\section{Build Configuration}
+
+Create \texttt{build.zig}:
+
+\begin{verbatim}
+const std = @import("std");
+
+pub fn build(b: *std.Build) !void {
+    const optimize = .ReleaseSmall;
+
+    // Step 1: Generate LLVM bitcode
+    const bitcode_path = "entrypoint.bc";
+    const gen_bitcode = b.addSystemCommand(&.{
+        "zig",
+        "build-lib",
+        "-target",
+        "bpfel-freestanding",
+        "-O",
+        "ReleaseSmall",
+        "-femit-llvm-bc=" ++ bitcode_path,
+        "-fno-emit-bin",
+        "src/main.zig",
+    });
+
+    // Step 2: Link with sbpf-linker
+    const program_so_path = "zig-out/lib/program.so";
+    const link_program = b.addSystemCommand(&.{
+        "sbpf-linker",
+        "--cpu", "v2",
+        "--export", "entrypoint",
+        "-o", program_so_path,
+        bitcode_path,
+    });
+    link_program.step.dependOn(&gen_bitcode.step);
+
+    b.getInstallStep().dependOn(&link_program.step);
+}
+\end{verbatim}
+
+Build with:
+
+\begin{verbatim}
+zig build
+\end{verbatim}
+
+This generates \texttt{zig-out/lib/program.so} ready for deployment.
+
+\section{How It Works}
+
+Zig compiles to LLVM bitcode with \texttt{-femit-llvm-bc}. sbpf-linker transforms this bitcode into Solana's eBPF format. The \texttt{-{}-cpu v2} flag ensures compatibility with Solana's sBPF instruction set.
+
+Solana syscalls are invoked via function pointers with MurmurHash3-32 hashes:
+
+\begin{verbatim}
+const syscalls = @import("syscalls.zig");
+syscalls.log(&message);  // Calls sol_log_ via hash 0x207559bd
+\end{verbatim}
+
+\section{Repository}
+
+Source code and examples: \href{https://github.com/vitorpy/zignocchio}{github.com/vitorpy/zignocchio}
+
+The SDK includes working counter and hello world examples with Jest tests that run against solana-test-validator.
+
+\input{site/includes/footer}
+\end{document}
