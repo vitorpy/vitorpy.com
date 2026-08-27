@@ -1,13 +1,5 @@
-# Jekyll
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-vendor/
-
-# Generated site
+# Generated deployment output
 public/
-.tools/
 
 # Editor
 .claude/
@@ -17,20 +9,3 @@ public/
 # OS
 .DS_Store
 Thumbs.db
-
-# Dependencies
-node_modules/
-
-# Build
-*.log
-*.tmp
-*.bak
-
-# Python
-__pycache__/
-*.pyc
-.env
-
-# Ruby
-.bundle/
-vendor/bundle/

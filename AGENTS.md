@@ -8,20 +8,16 @@ This repository has automatic deployment enabled. A push to GitHub `main` runs
 `.github/workflows/deploy.yml` and publishes the site through GitHub Pages.
 
 **Before pushing:**
-1. Build and test locally: `./scripts/build`
-2. Verify the expected pages and SVG math assets in `public/`
+1. Preview and validate `index.html` locally
+2. Verify that the deployment artifact contains only `index.html`
 3. Wait for user confirmation before pushing GitHub `main`
 4. NEVER assume it is safe to push automatically
 
 **Only push when the user explicitly asks you to push.**
 
-## LaTeX2HTML pipeline
+## Static site
 
-- Public source documents live below `site/pages/` and are named `index.tex`.
-- The source directory maps directly to the URL directory.
-- Shared LaTeX fragments live in `site/includes/`.
-- `site/drafts/` is deliberately excluded from builds.
-- `site/special/404.tex` produces the root-level `404.html` page.
-- Never edit generated files in `public/`; change the corresponding TeX source.
-- `scripts/bootstrap-latex2html` pins and installs the converter below ignored `.tools/`.
-- The production build command is `./scripts/build`.
+- `index.html` is the sole website source and the only file published.
+- Keep the page dependency-free: inline CSS, no generated assets, and no build step.
+- `.github/workflows/deploy.yml` stages `index.html` into a temporary `public/`
+  directory before deploying it through GitHub Pages.
