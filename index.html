@@ -7,32 +7,83 @@
 <style>
 body {
   margin: 0;
-  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: #000;
+  background: #fff;
+}
+main {
+  width: min(44rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+}
+.intro {
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #000;
-  background: #fff;
+  text-align: center;
 }
 h1 {
-  margin: 0 0 1em;
+  margin: 0 0 0.5em;
   font-size: 1.8em;
-  text-align: center;
+}
+h2 {
+  font-size: 1.35em;
+}
+h3 {
+  font-size: 1.05em;
 }
 p {
-  margin: 0.3em 0;
-  text-align: center;
+  margin: 0.7em 0;
 }
 a {
   color: #000;
 }
+section {
+  margin: 0 0 3rem;
+}
+#rclone-privacy {
+  border-top: 1px solid #ccc;
+  padding-top: 1.5rem;
+  scroll-margin-top: 1rem;
+}
+.updated {
+  color: #555;
+  font-size: 0.9em;
+}
 </style>
 </head>
 <body>
-<h1>Vitor Py Braga</h1>
-<p>Blockchain, distributed systems, &amp; zero-knowledge proofs.</p>
-<p style="margin-top: 1.2em;"><a href="mailto:vitor@vitorpy.com">vitor@vitorpy.com</a></p>
+<main>
+  <section class="intro" aria-labelledby="home-title">
+    <h1 id="home-title">Vitor Py Braga</h1>
+    <p>Blockchain, distributed systems, &amp; zero-knowledge proofs.</p>
+    <p><a href="mailto:vitor@vitorpy.com">vitor@vitorpy.com</a></p>
+  </section>
+
+  <section aria-labelledby="rclone-title">
+    <h2 id="rclone-title">Google Drive mount</h2>
+    <p><strong>rclone-zygalski</strong> is my personal rclone configuration for mounting Google Drive on my Linux computer. It lets me access and manage files made available to the app through Google Drive. It is not a service offered to other users.</p>
+    <p><a href="#rclone-privacy">Privacy policy for the Google Drive mount</a></p>
+  </section>
+
+  <section id="rclone-privacy" aria-labelledby="privacy-title">
+    <h2 id="privacy-title">Privacy policy for rclone-zygalski</h2>
+    <p class="updated">Last updated 25 October 2026</p>
+
+    <h3>Google data accessed and used</h3>
+    <p>The app requests the Google Drive <code>drive.file</code> permission. The local rclone client uses it to list, read, create, change, and delete files that Google makes available to this app in order to provide the mount and perform requested file operations.</p>
+
+    <h3>Storage and sharing</h3>
+    <p>OAuth credentials are stored in a user-only configuration file on my computer. Rclone may keep temporary local file data in its cache while the mount operates. The client communicates with Google Drive to perform the requested file operations. This website does not receive Google Drive files or OAuth credentials. I do not sell or share Google Drive data with others.</p>
+
+    <h3>Retention and control</h3>
+    <p>Google Drive files remain in the Google account until changed or deleted through the mount or Google Drive. Local cached data is cleared according to the rclone cache settings or when I remove it. Access can be revoked from the <a href="https://myaccount.google.com/connections">Google Account connections page</a>.</p>
+
+    <h3>Contact</h3>
+    <p>For questions about this personal integration or data under my control, email <a href="mailto:vitor@vitorpy.com">vitor@vitorpy.com</a>.</p>
+  </section>
+</main>
 </body>
 </html>
