@@ -24,7 +24,7 @@ jobs:
       - name: Stage website
         run: |
           mkdir public
-          cp index.html public/index.html
+          cp index.html rclone.html privacy.html public/
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
